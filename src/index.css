@@ -1,0 +1,62 @@
+/* Importing Google Font: Poppins with font weights 400, 600, and 700 */
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Importing Tailwind CSS base styles, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Applying global styles to root elements */
+html,
+body,
+#root,
+:root,
+.app {
+	width: 100dvw;
+	overflow-x: hidden;
+	font-family: "Plus Jakarta Sans", "Poppins", sans-serif;
+}
+
+.myfont {
+	font-family: "Plus Jakarta Sans", "Poppins", sans-serif;
+}
+
+.heading {
+	font-family: "Catamaran";
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #bbb7c1;
+	border-radius: 50rem;
+}
+
+html.lenis {
+	height: auto;
+}
+
+.lenis.lenis-smooth {
+	scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+	overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+	overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+	pointer-events: none;
+}
