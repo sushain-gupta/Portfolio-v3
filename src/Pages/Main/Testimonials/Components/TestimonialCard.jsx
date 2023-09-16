@@ -5,11 +5,19 @@ const TestimonialCard = ({ testimonial }) => {
 	return (
 		<div className="p-4 my-2 mx-10 ring-0 ring-gray-200 w-[30dvw] h-[40dvh] flex flex-col text-center items-center rounded-3xl bg-slate-100 bg-gradient-to-br from-gray-50 via-violet-50 to-gray-100 overflow-hidden">
 			<div className="relative">
-				<div className="w-20 h-20 inline-flex items-center justify-center rounded-full overflow-hidden text-indigo-500 mb-5 flex-shrink-0 bg-indigo-200">
+				<div
+					className={`${
+						testimonial.type === "client" ? "bg-emerald-200" : "bg-indigo-200"
+					} ${
+						testimonial.profile && "overflow-hidden"
+					} w-20 h-20 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0`}
+				>
 					<img
 						className="w-full h-full object-cover"
 						src={
-							testimonial.profile ?? testimonial.gender.toLowerCase() === "male"
+							testimonial.profile
+								? testimonial.profile
+								: testimonial.gender.toLowerCase() === "male"
 								? "https://res.cloudinary.com/dkezwrb3a/image/upload/v1694538229/Portfolio/testimonials/Number117_vnezod.svg"
 								: "https://res.cloudinary.com/dkezwrb3a/image/upload/v1694551283/Portfolio/testimonials/Number117_io2wji.svg"
 						}

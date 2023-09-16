@@ -11,7 +11,7 @@ export const testimonials = [
 	{
 		name: "Vinay Verma",
 		type: "client",
-		gender: "female",
+		gender: "male",
 		country: "India",
 		occupation: "Founder of Jarvis",
 		feedback:

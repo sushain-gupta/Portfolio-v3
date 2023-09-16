@@ -13,6 +13,7 @@ body,
 :root,
 .app {
 	width: 100dvw;
+	min-height: 100dvh;
 	overflow-x: hidden;
 	font-family: "Plus Jakarta Sans", "Poppins", sans-serif;
 }

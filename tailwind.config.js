@@ -6,18 +6,18 @@ export default {
 			height: {
 				screen: "100dvh",
 			},
-			backgroundImage: (theme) => ({
+			backgroundImage: () => ({
 				homeBg: "url('data/assets/png/bg-proj.png')",
 			}),
 			// Define animation class
 			animation: {
-				"ltr-linear-infinite": "move-bg 60s linear infinite",
+				"ltr-linear-infinite": "move-bg 460s linear infinite",
 			},
 			// Define keyframes
 			keyframes: {
 				"move-bg": {
 					"0%": { "background-position": "0 0" },
-					"100%": { "background-position": "0 -100dvh" },
+					"100%": { "background-position": "0 -1000dvh" },
 				},
 			},
 		},
