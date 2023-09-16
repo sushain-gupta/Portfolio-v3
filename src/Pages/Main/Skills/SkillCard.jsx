@@ -13,7 +13,7 @@ const SkillCard = ({ skillIcon, major, skillName, isInView, num }) => {
 		>
 			<div className="w-7 h-7 sm:w-10 sm:h-10 xl:w-12 xl:h-12 ">
 				<img
-					className="w-full h-full object-contain"
+					className="object-contain w-full h-full"
 					src={skillIcon}
 					alt={skillName}
 				/>

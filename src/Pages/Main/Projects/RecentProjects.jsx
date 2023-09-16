@@ -11,27 +11,35 @@ const RecentProjects = () => {
 	const isInView = useInView(ref, { once: true });
 
 	return (
-		<section ref={ref} name="projects" className="min-h-[50dvh] py-48 flex flex-col justify-center">
-			<div className="mx-auto flex items-center relative">
+		<section ref={ref} name="projects" className="min-h-[50dvh] py-24 lg:py-48 flex flex-col justify-center">
+			<div className="relative flex items-center mx-auto">
 				<div className="flex flex-col items-center">
-					<h2 className="heading text-4xl font-bold">My recent work</h2>
-					<p className="flex flex-col lg:flex-row gap-2 items-center text-center">
-						Here are a few past projects I've worked on. Want to see more?{" "}
+					<h2 className="text-4xl font-bold heading">My recent work</h2>
+
+
+					<p className="text-center">
+						Here are a few past projects I've worked on. Want to see more?
+						{" "}
 						<Link
 							to="/projects"
-							className="flex group items-center text-sky-500 hover:text-sky-600 hover:underline text-base"
+							className="inline-flex items-center text-base group text-sky-500 hover:text-sky-600 hover:underline"
 						>
 							View More <IoIosArrowForward className="text-sm" />
 						</Link>
 					</p>
+
+
+
+
+
 				</div>
 
-				<div className="absolute -right-36 -top-12 rotate-6 hidden xl:block">
+				<div className="absolute hidden -right-36 -top-12 rotate-6 xl:block">
 					<img className="w-32 h-32" src={memoji} alt="" />
 				</div>
 			</div>
 
-			<div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-10 my-8 lg:m-8">
+			<div className="grid grid-cols-1 gap-6 my-8 lg:grid-cols-2 xl:grid-cols-3 lg:gap-10 lg:m-8">
 				{[...projects]
 					.reverse()
 					.slice(0, 3)

@@ -1,4 +1,4 @@
-import { AiFillHome } from "react-icons/ai"; 
+import { AiFillHome } from "react-icons/ai";
 import React, { useEffect, useState } from "react";
 import logo from "../../../data/assets/png/logo.png";
 import { Link } from "react-router-dom";
@@ -20,12 +20,12 @@ const ProjectLibHeader = () => {
 				<img className="w-full h-full" src={logo} alt="logo" />
 			</Link>
 
-			<nav className="flex gap-2 rounded-full p-1 overflow-hidden duration-500 cursor-pointer">
+			<nav className="flex gap-2 p-1 overflow-hidden duration-500 rounded-full cursor-pointer">
 				<Link
 					onClick={() => history.back()}
 					spy={true}
 					smooth={true}
-					className="flex gap-2 items-center px-3 py-1 rounded-full duration-500 hover:bg-emerald-100 text-sm"
+					className="flex items-center gap-2 px-3 py-1 text-sm duration-500 rounded-full hover:bg-emerald-100"
 				>
 					<AiFillHome /> Home
 				</Link>

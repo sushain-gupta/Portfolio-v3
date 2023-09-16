@@ -8,9 +8,9 @@ const Skills = () => {
 	const isInView = useInView(ref, { once: true });
 
 	return (
-		<section ref={ref} name="skills" className="py-28 flex flex-col justify-center items-center rounded-3xl text-center sm:text-start">
-			<div className="mx-auto flex flex-col items-center">
-				<h2 className="heading text-4xl font-bold my-2">My Skills</h2>
+		<section ref={ref} name="skills" className="flex flex-col items-center justify-center text-center py-28 rounded-3xl sm:text-start">
+			<div className="flex flex-col items-center mx-auto">
+				<h2 className="my-2 text-4xl font-bold heading">My Skills</h2>
 				<p>
 					Tiles in{" "}
 					<span className="text-sky-500 bg-sky-100/70 px-1.5 rounded-lg">
@@ -20,7 +20,7 @@ const Skills = () => {
 				</p>
 			</div>
 
-			<div className="mx-auto w-max grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 gap-4 sm:gap-5 rounded-3xl my-10">
+			<div className="grid grid-cols-3 gap-4 mx-auto my-10 w-max sm:grid-cols-3 md:grid-flow-col-4 lg:grid-cols-5 2xl:grid-cols-6 sm:gap-5 rounded-3xl">
 				{skills.map((skill, key) => {
 					return (
 						<SkillCard

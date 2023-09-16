@@ -6,19 +6,19 @@ import arrow from "../../../data/assets/png/arrow.png";
 
 const Testimonials = () => {
 	return (
-		<section name="testimonials" className="py-28 relative">
-			<div className="absolute w-full h-full top-0 -z-20 bg-homeBg"></div>
-			<div className="bg-gradient-to-t from-white via-white/95 to-white absolute w-full h-full top-0 -z-10"></div>
+		<section name="testimonials" className="relative py-28">
+			<div className="absolute top-0 w-full h-full -z-20 bg-homeBg"></div>
+			<div className="absolute top-0 w-full h-full bg-gradient-to-t from-white via-white/95 to-white -z-10"></div>
 
-			<div className="mx-auto flex flex-col items-center">
-				<h2 className="heading text-4xl font-bold">Testimonial</h2>
+			<div className="flex flex-col items-center mx-auto">
+				<h2 className="text-4xl font-bold heading">Testimonial</h2>
 				<p className="flex gap-2">
 					Discover Feedback from{" "}
-					<span className="bg-green-100 px-1 font-semibold rounded-lg">
+					<span className="px-1 font-semibold bg-green-100 rounded-lg">
 						Clients
 					</span>{" "}
 					and{" "}
-					<span className="bg-sky-100 px-1 font-semibold rounded-lg">
+					<span className="px-1 font-semibold rounded-lg bg-sky-100">
 						Colleagues
 					</span>{" "}
 				</p>
@@ -35,7 +35,7 @@ const Testimonials = () => {
 				})}
 			</Marquee>
 
-			<div className="flex items-center flex-col absolute left-20 top-24 -rotate-12 text-slate-400">
+			<div className="absolute flex flex-col items-center left-20 top-24 -rotate-12 text-slate-400">
 				<p>
 					{" "}
 					{"<"}Hold to read {"/>"}

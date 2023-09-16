@@ -13,7 +13,7 @@ const Main = () => {
     return (
         <>
             <Header />
-            <div className="px-7 sm:px-10 md:px-14 3xl:px-24 relative flex flex-col gap-5">
+            <div className="relative flex flex-col gap-5 px-7 sm:px-10 md:px-14 3xl:px-24">
                 <Home />
                 <About />
                 <Skills />
