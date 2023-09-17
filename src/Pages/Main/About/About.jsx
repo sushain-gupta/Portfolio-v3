@@ -22,11 +22,11 @@ const About = () => {
 
 			<div className="relative flex flex-col items-center w-full sm:w-2/3 lg:w-1/3 xl:w-1/4">
 				<div className="w-2/3 overflow-hidden lg:w-full"
-					style={about.primaryProfileImage && {
+					style={about.secondaryProfileImage && {
 						borderRadius: "55% 45% 42% 58% / 55% 59% 41% 45%"
 					}}>
 					<img className="object-cover w-full h-full"
-						src={about.primaryProfileImage}
+						src={about.secondaryProfileImage}
 						alt="pfp" />
 				</div>
 
