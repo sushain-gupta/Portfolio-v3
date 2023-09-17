@@ -39,7 +39,7 @@ const Projects = () => {
 			</div>
 
 			<div name="projects" className="flex flex-col min-h-screen pb-14">
-				<div className="grid grid-cols-3 gap-10 m-8">
+				<div className="grid grid-cols-1 gap-6 my-8 lg:grid-cols-2 xl:grid-cols-3 lg:gap-10 lg:m-8">
 
 					<AnimatePresence mode="popLayout">
 						{[...projects].reverse().map((project, key) => {

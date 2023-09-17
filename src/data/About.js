@@ -2,6 +2,7 @@ export const about = {
 	firstName: "Sushain",
 	lastName: "Gupta",
 	gender: "male",
+	logo: "https://res.cloudinary.com/dkezwrb3a/image/upload/v1694897056/Portfolio/logo_ly8elg.png",
 	// primaryProfileImage:
 	// 	"https://res.cloudinary.com/dkezwrb3a/image/upload/v1674477439/Portfolio/profile-Image.jpg",
 	// secondaryProfileImage:

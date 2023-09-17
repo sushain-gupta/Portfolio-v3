@@ -1,17 +1,17 @@
 import { CgMenuRightAlt } from "react-icons/cg";
 import { CgMenuRight } from "react-icons/cg";
 import React, { useEffect, useState } from "react";
-import logo from "../data/assets/png/logo.png";
 import { Link } from "react-scroll";
+import { about } from "../data/About";
 
 const Header = () => {
 	const [scrollYVal, setScrollYVal] = useState(window.scrollY);
+	const [openSidebar, setOpenSidebar] = useState(true)
 
 	useEffect(() => {
 		window.addEventListener("scroll", () => setScrollYVal(window.scrollY));
 	}, []);
 
-	const [openSidebar, setOpenSidebar] = useState(true)
 
 	return (
 		<header
@@ -19,7 +19,7 @@ const Header = () => {
 				} flex fixed justify-between items-center top-0 w-full z-50 duration-500 px-5 sm:px-8 lg:px-14 xl:px-24`}
 		>
 			<div className="w-14 h-14 sm:w-16 sm:h-16">
-				<img className="w-full h-full" src={logo} alt="logo" />
+				<img className="w-full h-full" src={about.logo} alt="logo" />
 			</div>
 
 			<nav onClick={() => setOpenSidebar(false)} className={`${openSidebar ? "translate-x-0" : "translate-x-full"} fixed lg:static flex-col top-0 bg-white/95 lg:bg-transparent lg:translate-x-0 shadow-2xl lg:shadow-none bottom-0 right-0 w-2/3 sm:w-1/2 lg:w-max p-6 sm:p-8 z-60 lg:flex-row flex gap-5 lg:gap-2 lg:p-1 overflow-hidden duration-500 text-sm md:text-base`}>
