@@ -3,10 +3,10 @@ export const about = {
 	lastName: "Gupta",
 	gender: "male",
 	logo: "https://res.cloudinary.com/dkezwrb3a/image/upload/v1694897056/Portfolio/logo_ly8elg.png",
-	// primaryProfileImage:
-	// 	"https://res.cloudinary.com/dkezwrb3a/image/upload/v1674477439/Portfolio/profile-Image.jpg",
-	// secondaryProfileImage:
-	// 	"https://res.cloudinary.com/dkezwrb3a/image/upload/v1674477439/Portfolio/profile-Image.jpg",
+	primaryProfileImage:
+		"https://res.cloudinary.com/dkezwrb3a/image/upload/v1694688167/Portfolio/Number_1_1_iojqkk.svg",
+	secondaryProfileImage:
+		"https://res.cloudinary.com/dkezwrb3a/image/upload/v1694690201/Portfolio/Untitled_design_2_sxfvbm.png",
 	email: "sushain.work@gmail.com",
 	shortDesc:
 		"An India-based freelancer who's into web development and open to work as a front-end developer.",
