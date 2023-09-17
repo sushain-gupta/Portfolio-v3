@@ -1,3 +1,4 @@
+import { AiOutlineTwitter } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
@@ -66,10 +67,24 @@ const About = () => {
 						)
 					}
 
+					<RouterLink
+						tabIndex={8}
+						style={{
+							transform: isInView ? "none" : "translateY(200px)",
+							opacity: isInView ? 1 : 0,
+							transition: "all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+						}}
+						to={about.socialLinks.instagram}
+						target="_blank"
+						className="p-2 duration-500 rounded-full bg-gradient-to-br hover:rotate-6 from-fuchsia-500 via-red-600 to-orange-400 text-slate-50 focus:outline-none focus:outline-slate-500"
+					>
+						<AiOutlineInstagram />
+					</RouterLink>
+
 					{
 						about.socialLinks.twitter && (
 							<RouterLink
-								tabIndex={8}
+								tabIndex={9}
 								style={{
 									transform: isInView ? "none" : "translateY(200px)",
 									opacity: isInView ? 1 : 0,
@@ -77,9 +92,9 @@ const About = () => {
 								}}
 								to={about.socialLinks.instagram}
 								target="_blank"
-								className="p-2 duration-500 rounded-full bg-gradient-to-br hover:rotate-6 from-fuchsia-500 via-red-600 to-orange-400 text-slate-50 focus:outline-none focus:outline-slate-500"
+								className="p-2 duration-500 rounded-full bg-gradient-to-br hover:-rotate-6 bg-sky-500 focus:outline-none focus:outline-slate-500"
 							>
-								<AiOutlineInstagram />
+								<AiOutlineTwitter />
 							</RouterLink>
 						)
 					}
