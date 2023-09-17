@@ -8,6 +8,7 @@ import { Link as RouterLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import { useInView } from "framer-motion";
 import { about } from "../../../data/About";
+import memoji from  "../../../data/assets/png/memoji2.png"
 
 const About = () => {
 	const ref = useRef(null);
@@ -27,7 +28,7 @@ const About = () => {
 						borderRadius: "55% 45% 42% 58% / 55% 59% 41% 45%"
 					}}>
 					<img className="object-cover w-full h-full"
-						src={about.secondaryProfileImage}
+						src={about.secondaryProfileImage ?? memoji}
 						alt="pfp" />
 				</div>
 

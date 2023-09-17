@@ -2,6 +2,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import React from "react";
 import { Link } from "react-scroll";
 import { about } from "../../../data/About";
+import memoji from "../../../data/assets/png/memoji1.png"
 
 const Home = () => {
 	return (
@@ -41,7 +42,7 @@ const Home = () => {
 				}} >
 				<img
 					className="object-cover w-full h-full"
-					src={about.primaryProfileImage}
+					src={about.primaryProfileImage ?? memoji}
 					alt="pfp"
 				/>
 			</div>

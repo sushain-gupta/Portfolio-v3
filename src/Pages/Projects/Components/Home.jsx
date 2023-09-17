@@ -1,5 +1,6 @@
 import React from "react";
 import { about } from "../../../data/About";
+import memoji from "../../../data/assets/png/memoji2.png"
 
 const Home = () => {
 	return (
@@ -23,12 +24,12 @@ const Home = () => {
 			</div>
 
 			<div
-				className="w-2/3 overflow-hidden sm:w-1/2 xl:w-1/3" style={{
+				className="w-2/3 overflow-hidden sm:w-1/2 xl:w-1/3" style={about.secondaryProfileImage && {
 					borderRadius: "55% 45% 42% 58% / 55% 59% 41% 45%"
 				}} >
 				<img
 					className="object-cover w-full h-full"
-					src={about.secondaryProfileImage}
+					src={about.secondaryProfileImage ?? memoji}
 					alt="pfp"
 				/>
 			</div>
