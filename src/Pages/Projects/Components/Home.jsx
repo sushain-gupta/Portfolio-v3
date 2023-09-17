@@ -24,7 +24,7 @@ const Home = () => {
 			</div>
 
 			<div
-				className="w-2/3 overflow-hidden sm:w-1/2 xl:w-1/3" style={about.secondaryProfileImage && {
+				className="w-2/3 overflow-hidden sm:w-1/2 xl:w-1/3" style={{
 					borderRadius: "55% 45% 42% 58% / 55% 59% 41% 45%"
 				}} >
 				<img
