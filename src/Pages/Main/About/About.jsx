@@ -3,7 +3,6 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import React, { useRef } from "react";
-import memoji from "../../../data/assets/png/aboutMemoji.png";
 import { Link as RouterLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import { useInView } from "framer-motion";
@@ -27,8 +26,8 @@ const About = () => {
 						borderRadius: "55% 45% 42% 58% / 55% 59% 41% 45%"
 					}}>
 					<img className="object-cover w-full h-full"
-						src={about.primaryProfileImage ?? memoji}
-						alt="memoji" />
+						src={about.primaryProfileImage}
+						alt="pfp" />
 				</div>
 
 				<h2 className="mt-8 text-3xl font-extrabold text-center lg:hidden lg:text-start xl:text-4xl heading">{about.firstName + " " + about.lastName}</h2>

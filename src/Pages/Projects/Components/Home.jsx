@@ -1,5 +1,5 @@
 import React from "react";
-import memoji from "../../../data/assets/png/aboutMemoji.png";
+import { about } from "../../../data/About";
 
 const Home = () => {
 	return (
@@ -28,7 +28,7 @@ const Home = () => {
 				}} >
 				<img
 					className="object-cover w-full h-full"
-					src={memoji}
+					src={about.secondaryProfileImage}
 					alt="pfp"
 				/>
 			</div>

@@ -4,7 +4,6 @@ import React from "react";
 import { AiFillGithub, AiOutlineInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import memoji from "../data/assets/svg/homeMemoji.svg"
 import { about } from "../data/About";
 
 const Footer = () => {
@@ -15,7 +14,7 @@ const Footer = () => {
 					<div className="w-24 h-24 overflow-hidden rounded-full sm:w-28 sm:h-28">
 						<img
 							className="object-cover w-full h-full"
-							src={memoji}
+							src={about.primaryProfileImage}
 							alt="pfp"
 						/>
 					</div>
