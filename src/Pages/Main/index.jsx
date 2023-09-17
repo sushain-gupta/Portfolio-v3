@@ -20,7 +20,7 @@ const Main = () => {
                 <Skills />
                 <RecentProjects />
                 <Experience />
-                <Testimonials />
+                {/* <Testimonials /> */}
             </div>
         </>
     )
