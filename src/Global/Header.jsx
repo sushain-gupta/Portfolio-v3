@@ -15,8 +15,8 @@ const Header = () => {
 
 	return (
 		<header
-			className={`${scrollYVal > 0 ? "shadow-md bg-slate-50/95 left-0 right-0" : "py-5"
-				} flex fixed justify-between items-center top-0 w-full z-50 duration-500 px-5 sm:px-8 lg:px-14 xl:px-24`}
+			className={`${scrollYVal > 0 ? "shadow-md bg-white/95 left-0 right-0" : "py-5"
+				} flex fixed justify-between items-center top-0 w-full z-50 duration-500 px-5 sm:px-8 lg:px-14 xl:px-24 rounded-b-2xl`}
 		>
 			<RouterLink to={about.hostedUrl} className="w-14 h-14 sm:w-16 sm:h-16">
 				<img className="w-full h-full" src={about.logo} alt="logo" />
