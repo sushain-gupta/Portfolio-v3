@@ -16,7 +16,7 @@ const Experience = () => {
 				transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
 			}}
 			name="experience"
-			className="flex flex-col items-center justify-center py-24 xl:py-0 xl:pb-24"
+			className="flex flex-col items-center justify-center min-h-screen"
 		>
 			<div className="sm:bg-gray-100 rounded-3xl">
 				<div className="container max-w-5xl mx-auto sm:px-4 sm:py-12">

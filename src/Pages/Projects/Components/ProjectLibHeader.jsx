@@ -6,7 +6,7 @@ import { about } from "../../../data/About";
 
 const ProjectLibHeader = () => {
 	const [scrollYVal, setScrollYVal] = useState(window.scrollY);
-	const [openSidebar, setOpenSidebar] = useState(true)
+	const [openSidebar, setOpenSidebar] = useState(false)
 
 	useEffect(() => {
 		window.addEventListener("scroll", () => setScrollYVal(window.scrollY));

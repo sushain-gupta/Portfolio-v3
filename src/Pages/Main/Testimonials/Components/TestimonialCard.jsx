@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const TestimonialCard = ({ testimonial }) => {
 	return (
-		<div className="flex flex-col items-center h-full p-4 mx-10 my-auto overflow-hidden text-center ring-0 ring-gray-200 w-96 rounded-3xl bg-slate-100 bg-gradient-to-br from-gray-50 via-violet-50 to-gray-100">
+		<div className="flex flex-col items-center h-full p-4 mx-auto my-auto overflow-hidden text-center ring-0 ring-gray-200 sm:w-96 rounded-3xl bg-slate-100 bg-gradient-to-br from-gray-50 via-violet-50 to-gray-100">
 			<div className="relative">
 				<div
 					className={`${testimonial.type === "client" ? "bg-emerald-200" : "bg-indigo-200"
