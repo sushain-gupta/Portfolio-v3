@@ -21,7 +21,7 @@ const ProjectCard = ({ project, styles, initials }) => {
 						transition={{
 							type: "spring",
 						}}
-						onMouseOver={() => open ? setOpen(false) : setOpen(true)}
+						onMouseOver={() => setOpen(true)}
 						onMouseOut={() => setOpen(false)}
 						className="relative flex flex-col justify-center mx-auto overflow-hidden bg-gray-100 rounded-2xl group sm:w-2/3 lg:w-full"
 					>
@@ -87,7 +87,7 @@ const ProjectCard = ({ project, styles, initials }) => {
 					(
 						<div
 							style={styles}
-							onMouseOver={() => open ? setOpen(false) : setOpen(true)}
+							onMouseOver={() => setOpen(true)}
 							onMouseOut={() => setOpen(false)}
 							className="relative flex flex-col justify-center mx-auto overflow-hidden bg-gray-100 rounded-2xl group sm:w-2/3 lg:w-full"
 						>
