@@ -33,14 +33,13 @@ const About = () => {
 
 				<h2 className="mt-8 text-3xl font-extrabold text-center lg:hidden lg:text-start xl:text-4xl heading">{about.firstName + " " + about.lastName}</h2>
 
-
 				<div className="flex justify-center gap-5 my-5 text-2xl xl:hidden sm:flex-col lg:flex-row sm:absolute lg:static -right-20 top-20 lg:my-10">
 					<RouterLink
 						tabIndex={6}
 						style={{
-							transform: isInView ? "none" : "translateY(200px)",
+							transform: isInView ? "scale(1)" : "scale(0)",
 							opacity: isInView ? 1 : 0,
-							transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+							transition: "all 0.8s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
 						}}
 						target="_blank"
 						to={about.socialLinks.linkedin}
@@ -54,9 +53,9 @@ const About = () => {
 							<RouterLink
 								tabIndex={7}
 								style={{
-									transform: isInView ? "none" : "translateY(200px)",
+									transform: isInView ? "scale(1)" : "scale(0)",
 									opacity: isInView ? 1 : 0,
-									transition: "all 1.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+									transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
 								}}
 								to={about.socialLinks.github}
 								target="_blank"
@@ -70,9 +69,9 @@ const About = () => {
 					<RouterLink
 						tabIndex={8}
 						style={{
-							transform: isInView ? "none" : "translateY(200px)",
+							transform: isInView ? "scale(1)" : "scale(0)",
 							opacity: isInView ? 1 : 0,
-							transition: "all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+							transition: "all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
 						}}
 						to={about.socialLinks.instagram}
 						target="_blank"
@@ -86,9 +85,9 @@ const About = () => {
 							<RouterLink
 								tabIndex={9}
 								style={{
-									transform: isInView ? "none" : "translateY(200px)",
+									transform: isInView ? "scale(1)" : "scale(0)",
 									opacity: isInView ? 1 : 0,
-									transition: "all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+									transition: "all 1.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
 								}}
 								to={about.socialLinks.instagram}
 								target="_blank"
