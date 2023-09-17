@@ -5,7 +5,6 @@ import About from './About/About'
 import Skills from './Skills/Skills'
 import RecentProjects from './Projects/RecentProjects'
 import Experience from './Experience/Experience'
-import Testimonials from './Testimonials/Testimonials'
 
 const Main = () => {
     document.body.scrollTop = 0; // For Safari

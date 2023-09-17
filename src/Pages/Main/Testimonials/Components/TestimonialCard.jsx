@@ -1,6 +1,5 @@
 import React from "react";
 import { BsQuote } from "react-icons/bs";
-import { Link } from "react-router-dom";
 
 const TestimonialCard = ({ testimonial }) => {
 	return (

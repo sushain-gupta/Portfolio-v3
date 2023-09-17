@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
-import Marquee from "react-fast-marquee";
+import React, { useRef } from "react";
 import TestimonialCard from "./Components/TestimonialCard";
 import { testimonials } from "../../../data/Testimonials";
 import arrow from "../../../data/assets/png/arrow.png";
