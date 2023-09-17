@@ -11,11 +11,10 @@ const RecentProjects = () => {
 	const isInView = useInView(ref, { once: true });
 
 	return (
-		<section ref={ref} name="projects" className="min-h-[50dvh] py-24 lg:py-48 flex flex-col justify-center">
+		<section ref={ref} name="projects" className="min-h-[50dvh] py-24 lg:py-48 xl:py-36 flex flex-col justify-center">
 			<div className="relative flex items-center mx-auto">
 				<div className="flex flex-col items-center">
 					<h2 className="text-4xl font-bold heading">My recent work</h2>
-
 
 					<p className="text-center">
 						Here are a few past projects I've worked on. Want to see more?
@@ -27,11 +26,6 @@ const RecentProjects = () => {
 							View More <IoIosArrowForward className="text-sm" />
 						</Link>
 					</p>
-
-
-
-
-
 				</div>
 
 				<div className="absolute hidden -right-36 -top-12 rotate-6 xl:block">

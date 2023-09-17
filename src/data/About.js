@@ -18,7 +18,10 @@ export const about = {
 		linkedin: "https://www.linkedin.com/in/sushain-gupta",
 		github: "https://github.com/sushain-gupta",
 		instagram: "https://www.instagram.com/sushain.gupta",
+		// twitter: "https://www.twitter.com/sushain.gupta",
 	},
 	resumeLink:
 		"https://firebasestorage.googleapis.com/v0/b/sushains-portfolio.appspot.com/o/Sushain%20Rajesh%20Gupta.pdf?alt=media&token=361168f2-05eb-4039-91b6-b827c27c7457",
+
+	hostedUrl: "https://sushaingupta.netlify.app/",
 };

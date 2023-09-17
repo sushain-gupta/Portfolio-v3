@@ -35,14 +35,13 @@ const Testimonials = () => {
 				})}
 			</Marquee>
 
-			<div className="absolute flex flex-col items-center left-20 top-24 -rotate-12 text-slate-400">
+			<div className="absolute flex-col items-center hidden xl:flex left-20 top-24 -rotate-12 text-slate-400">
 				<p>
-					{" "}
 					{"<"}Hold to read {"/>"}
 				</p>
 
 				<img
-					className="w-20 ml-10 opacity-20 rotate-[46deg] my-5 "
+					className="w-20 ml-10 opacity-20 rotate-[46deg] my-5"
 					src={arrow}
 					alt="arrow vector"
 				/>

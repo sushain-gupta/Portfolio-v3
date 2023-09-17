@@ -1,9 +1,10 @@
 import React from "react";
 import { BsQuote } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const TestimonialCard = ({ testimonial }) => {
 	return (
-		<div className="p-4 my-2 mx-10 ring-0 ring-gray-200 w-[30dvw] h-[40dvh] flex flex-col text-center items-center rounded-3xl bg-slate-100 bg-gradient-to-br from-gray-50 via-violet-50 to-gray-100 overflow-hidden">
+		<div className="flex flex-col items-center h-full p-4 mx-10 my-auto overflow-hidden text-center ring-0 ring-gray-200 w-96 rounded-3xl bg-slate-100 bg-gradient-to-br from-gray-50 via-violet-50 to-gray-100">
 			<div className="relative">
 				<div
 					className={`${testimonial.type === "client" ? "bg-emerald-200" : "bg-indigo-200"
@@ -19,7 +20,7 @@ const TestimonialCard = ({ testimonial }) => {
 									? "https://res.cloudinary.com/dkezwrb3a/image/upload/v1694538229/Portfolio/testimonials/Number117_vnezod.svg"
 									: "https://res.cloudinary.com/dkezwrb3a/image/upload/v1694551283/Portfolio/testimonials/Number117_io2wji.svg"
 						}
-						alt=""
+						alt="pfp"
 					/>
 				</div>
 
@@ -40,12 +41,12 @@ const TestimonialCard = ({ testimonial }) => {
 				<p className="text-sm text-gray-400">{testimonial.occupation}</p>
 			</div>
 
-			<div className="flex p-2 text-base leading-relaxed">
+			<div className="flex p-2 text-base leading-relaxed text-center">
 				<div>
 					<BsQuote />
 				</div>
 
-				<p className="px-2 line-clamp-3">{testimonial.feedback}</p>
+				<p className="px-2 line-clamp-5">{testimonial.feedback}</p>
 
 				<div className="mt-auto">
 					<BsQuote className="rotate-180" />

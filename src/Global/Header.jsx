@@ -2,6 +2,7 @@ import { CgMenuRightAlt } from "react-icons/cg";
 import { CgMenuRight } from "react-icons/cg";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom"
 import { about } from "../data/About";
 
 const Header = () => {
@@ -18,9 +19,9 @@ const Header = () => {
 			className={`${scrollYVal > 0 ? "shadow-md bg-slate-50/95 left-0 right-0" : "py-5"
 				} flex fixed justify-between items-center top-0 w-full z-50 duration-500 px-5 sm:px-8 lg:px-14 xl:px-24`}
 		>
-			<div className="w-14 h-14 sm:w-16 sm:h-16">
+			<RouterLink to={about.hostedUrl} className="w-14 h-14 sm:w-16 sm:h-16">
 				<img className="w-full h-full" src={about.logo} alt="logo" />
-			</div>
+			</RouterLink>
 
 			<nav onClick={() => setOpenSidebar(false)} className={`${openSidebar ? "translate-x-0" : "translate-x-full"} fixed lg:static flex-col top-0 bg-white/95 lg:bg-transparent lg:translate-x-0 shadow-2xl lg:shadow-none bottom-0 right-0 w-2/3 sm:w-1/2 lg:w-max p-6 sm:p-8 z-60 lg:flex-row flex gap-5 lg:gap-2 lg:p-1 overflow-hidden duration-500 text-sm md:text-base`}>
 				<button onClick={() => setOpenSidebar(false)} className="p-2 ml-auto overflow-hidden text-xl text-red-500 duration-500 rounded-full bg-rose-100 lg:hidden z-60 md:text-2xl">
@@ -76,20 +77,26 @@ const Header = () => {
 					Testimonials
 				</Link> */}
 
-				<button
+				<RouterLink
+					target="_blank"
+					to={`mailto:${about.email}`}
 					onClick={() => setOpenSidebar(false)}
 					className="px-3 py-2 mt-auto text-center duration-500 rounded-lg lg:hidden hover:bg-emerald-600 text-slate-50 group bg-gradient-to-br from-emerald-400 to-sky-500 hover:bg-gradient-to-bl">
 					Get in touch
-				</button>
+				</RouterLink>
 			</nav>
 
-			<button onClick={() => setOpenSidebar(true)} className="p-2 ml-auto overflow-hidden text-2xl rounded-full lg:hidden z-60">
+			<button
+				onClick={() => setOpenSidebar(true)} className="p-2 ml-auto overflow-hidden text-2xl rounded-full lg:hidden z-60">
 				<CgMenuRightAlt />
 			</button>
 
-			<button className="hidden lg:flex items-center gap-2 hover:bg-emerald-600 px-3 py-1.5 rounded-lg text-slate-50 duration-500 group bg-gradient-to-br from-emerald-400 to-sky-500 hover:bg-gradient-to-bl">
+			<RouterLink
+				to={`mailto:${about.email}`}
+				target="_blank"
+				className="hidden lg:flex items-center gap-2 hover:bg-emerald-600 px-3 py-1.5 rounded-lg text-slate-50 duration-500 group bg-gradient-to-br from-emerald-400 to-sky-500 hover:bg-gradient-to-bl">
 				Get in touch
-			</button>
+			</RouterLink>
 		</header>
 	);
 };

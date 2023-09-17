@@ -1,3 +1,4 @@
+import { AiOutlineTwitter } from "react-icons/ai";
 import { BiMailSend } from "react-icons/bi";
 import React from "react";
 import { AiFillGithub, AiOutlineInstagram } from "react-icons/ai";
@@ -48,13 +49,19 @@ const Footer = () => {
 							<FaLinkedinIn />
 						</Link>
 
-						<Link
-							to={about.socialLinks.github}
-							target="_blank"
-							className="p-2 duration-500 rounded-full shadow-xl  bg-slate-800 hover:rotate-6 text-slate-50"
-						>
-							<AiFillGithub />
-						</Link>
+						{
+							about.socialLinks.github && (
+								<Link
+									to={about.socialLinks.github}
+									target="_blank"
+									className="p-2 duration-500 rounded-full shadow-xl bg-slate-800 hover:rotate-6 text-slate-50"
+								>
+									<AiFillGithub />
+								</Link>
+							)}
+
+
+
 
 						<Link
 							to={about.socialLinks.instagram}
@@ -63,6 +70,20 @@ const Footer = () => {
 						>
 							<AiOutlineInstagram />
 						</Link>
+
+						{
+							about.socialLinks.twitter &&
+							(
+								<Link
+									to={about.socialLinks.twitter}
+									target="_blank"
+									className="p-2 duration-500 rounded-full shadow-xl bg-gradient-to-br hover:-rotate-6 bg-sky-500 text-slate-50"
+								>
+									<AiOutlineTwitter />
+								</Link>
+							)
+						}
+
 					</div>
 				</div>
 			</div>
@@ -73,12 +94,19 @@ const Footer = () => {
 				</h2>
 
 				<p className="text-sm">
-					Interested in working together? We should queue up a time to chat. <Link className="inline-flex items-center gap-1 lg:hidden text-sky-500">Get in touch <BiMailSend /></Link>
+					Interested in working together? We should queue up a time to chat.
+					<Link
+						target="_blank"
+						to={`mailto:${about.email}`}
+						className="inline-flex items-center gap-1 lg:hidden text-sky-500">Get in touch <BiMailSend /></Link>
 				</p>
 
-				<button className="hidden lg:flex items-center gap-2 hover:bg-emerald-600 px-2 text-sm xl:text-base xl:px-3 py-1.5 rounded-lg text-slate-50 duration-500 group bg-gradient-to-br from-emerald-400 to-sky-500 hover:bg-gradient-to-bl">
+				<Link
+					target="_blank"
+					to={`mailto:${about.email}`}
+					className="hidden lg:flex items-center gap-2 hover:bg-emerald-600 px-2 text-sm xl:text-base xl:px-3 py-1.5 rounded-lg text-slate-50 duration-500 group bg-gradient-to-br from-emerald-400 to-sky-500 hover:bg-gradient-to-bl">
 					Get in touch
-				</button>
+				</Link>
 			</div>
 		</footer>
 	);

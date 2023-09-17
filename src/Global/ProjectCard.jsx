@@ -56,7 +56,7 @@ const ProjectCard = ({ project, styles, initials }) => {
 								<Link
 									target="_blank"
 									to={project.Github}
-									className="p-2 duration-500 rounded-full  bg-slate-50 hover:rotate-6"
+									className="p-2 duration-500 rounded-full bg-slate-50 hover:rotate-6"
 								>
 									<AiFillGithub />
 								</Link>
@@ -120,7 +120,7 @@ const ProjectCard = ({ project, styles, initials }) => {
 							<div className="flex justify-between gap-6 m-auto text-2xl w-max h-max">
 								<Link
 									to={project.Github}
-									className="p-2 duration-500 rounded-full  bg-slate-50 hover:rotate-6"
+									className="p-2 duration-500 rounded-full bg-slate-50 hover:rotate-6"
 								>
 									<AiFillGithub />
 								</Link>
