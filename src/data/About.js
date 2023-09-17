@@ -4,7 +4,7 @@ export const about = {
 	gender: "male",
 	logo: "https://res.cloudinary.com/dkezwrb3a/image/upload/v1694897056/Portfolio/logo_ly8elg.png",
 	primaryProfileImage:
-		"https://res.cloudinary.com/dkezwrb3a/image/upload/v1694688167/Portfolio/Number_1_1_iojqkk.svg",
+		"https://res.cloudinary.com/dkezwrb3a/image/upload/v1694956087/Portfolio/Number_1_2_udlztt.svg",
 	secondaryProfileImage:
 		"https://res.cloudinary.com/dkezwrb3a/image/upload/v1694690201/Portfolio/Untitled_design_2_sxfvbm.png",
 	email: "sushain.work@gmail.com",
