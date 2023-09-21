@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 
 const ProjectCard = ({ project, styles, initials }) => {
 	const [open, setOpen] = useState(false);
+	const screenTouch = window.matchMedia("(pointer: coarse)").matches
 
 	return (
 		<>
@@ -83,14 +84,13 @@ const ProjectCard = ({ project, styles, initials }) => {
 							className={`top-0 absolute w-full h-1/2 bg-gradient-to-br from-gray-700 via-gray-900 to-black`}
 						></div>
 					</motion.div >
-
 					:
 					(
 						<div
 							style={styles}
-							onTouchStart={() => setOpen(true)}
 							onMouseEnter={() => setOpen(true)}
 							onMouseLeave={() => setOpen(false)}
+							onMouseOver={() => screenTouch && setOpen(true)}
 							className="relative flex flex-col justify-center mx-auto overflow-hidden bg-gray-100 rounded-2xl group sm:w-2/3 lg:w-full"
 						>
 							<div className="z-10 flex items-center h-full px-6 py-2 w-86">
@@ -117,8 +117,8 @@ const ProjectCard = ({ project, styles, initials }) => {
 							</div>
 
 							<div
-								className={`${open ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
-									} absolute flex top-0 h-full w-full my-auto bottom-0  group-hover: z-20 right-0 bg-sky-900/70 duration-700 rounded-2xl`}
+								className={`${open ? "translate-y-0 opacity-100 z-20" : "translate-y-full opacity-0 -z-10"
+									} absolute flex top-0 h-full w-full my-auto bottom-0 right-0 bg-sky-900/70 duration-700 rounded-2xl`}
 							>
 								<div
 									className="flex justify-between gap-6 m-auto text-3xl w-max h-max">
