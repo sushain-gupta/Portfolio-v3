@@ -11,7 +11,7 @@ const RecentProjects = () => {
 	const isInView = useInView(ref, { once: true });
 
 	return (
-		<section ref={ref} name="projects" className="min-h-[50dvh] py-24 lg:py-48 xl:py-36 flex flex-col justify-center">
+		<section ref={ref} name="projects" className="min-h-[50dvh] py-24 lg:py-48 xl:py-36 flex flex-col justify-center px-8">
 			<div className="relative flex items-center mx-auto">
 				<div className="flex flex-col items-center">
 					<h2 className="text-4xl font-bold heading">My recent work</h2>
@@ -33,7 +33,7 @@ const RecentProjects = () => {
 				</div>
 			</div>
 
-			<div className="grid grid-cols-1 gap-6 my-8 lg:grid-cols-2 xl:grid-cols-3 lg:gap-10 lg:m-8">
+			<div className="grid grid-cols-1 gap-8 my-8 lg:grid-cols-2 xl:grid-cols-3 lg:gap-10 lg:m-8">
 				{[...projects]
 					.reverse()
 					.slice(0, 3)

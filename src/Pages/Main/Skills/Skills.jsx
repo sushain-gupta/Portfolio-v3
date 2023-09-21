@@ -20,7 +20,7 @@ const Skills = () => {
 				</p>
 			</div>
 
-			<div className="grid grid-cols-3 gap-4 mx-auto my-10 w-max sm:grid-cols-3 md:grid-flow-col-4 lg:grid-cols-5 2xl:grid-cols-6 sm:gap-5 rounded-3xl">
+			<div className="grid grid-cols-3 gap-4 mx-auto my-10 w-max sm:grid-cols-4 md:grid-flow-col-4 lg:grid-cols-6 2xl:grid-cols-7 sm:gap-5 rounded-3xl">
 				{skills.map((skill, key) => {
 					return (
 						<SkillCard

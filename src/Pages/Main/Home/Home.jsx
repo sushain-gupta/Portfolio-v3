@@ -9,10 +9,10 @@ const Home = () => {
 		<section
 			tabIndex={1}
 			name="home"
-			className="flex flex-col-reverse items-center justify-center min-h-screen gap-10 pt-10 text-sm text-justify lg:flex-row lg:gap-20 sm:text-base md:text-xl lg:text-base xl:text-lg 2xl:text-xl lg:justify-around focus:outline-none lg:text-start"
+			className="flex flex-col-reverse items-center justify-center min-h-screen gap-10 pt-10 text-base lg:flex-row lg:gap-20 sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-xl lg:justify-around focus:outline-none lg:text-start"
 		>
 			<div className="lg:w-1/2">
-				<h1 className="text-4xl font-black text-gray-700 heading sm:text-5xl md:text-6xl lg:text-4xl xl:text-6xl 2xl:text-7xl text-start">
+				<h1 className="text-4xl font-black text-gray-700 heading sm:text-5xl xl:text-6xl 2xl:text-7xl text-start">
 					Hey, I'm{" "}
 					<span className="text-transparent from-emerald-400 via-emerald-400 to-sky-500 bg-gradient-to-r bg-clip-text">
 						{about.firstName}
@@ -20,8 +20,7 @@ const Home = () => {
 				</h1>
 
 				<p className="pt-2">
-					An India-based freelancer who's into web development and open to work
-					as a <span className="font-bold">front-end developer</span>.
+					An India based <span className="font-bold">web developer</span> who crafts captivating digital experiences through responsive designs and interactive UI/UX. Let's create together.
 				</p>
 
 				<Link

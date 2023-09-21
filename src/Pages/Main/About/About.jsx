@@ -103,7 +103,7 @@ const About = () => {
 
 			</div>
 
-			<div className="text-sm sm:text-base lg:w-2/3 xl:w-1/2">
+			<div className="sm:text-base xl:text-lg lg:w-2/3 xl:w-1/2">
 				<h2 className="hidden text-3xl font-extrabold lg:block xl:text-4xl heading">{about.firstName + " " + about.lastName}</h2>
 
 				<p className="my-3">
@@ -131,7 +131,7 @@ const About = () => {
 
 				<p>
 					Overall, I guarantee the highest level of professionalism, technical
-					proficiency , and client satisfaction in every aspect of web
+					proficiency, and client satisfaction in every aspect of web
 					development.
 				</p>
 

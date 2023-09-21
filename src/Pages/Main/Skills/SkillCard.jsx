@@ -9,9 +9,9 @@ const SkillCard = ({ skillIcon, major, skillName, isInView, num }) => {
 				transition: `all ${Math.sqrt((num + 1) / 3)}s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s`
 			}}
 			className={`${major ? "bg-sky-200/30" : "bg-slate-100"
-				} items-center justify-between flex flex-col gap-3 sm:gap-4 p-1.5 py-3 sm:p-5 xl:w-40 xl:h-36 rounded-xl text-center`}
+				} items-center justify-around flex flex-col gap-3 sm:gap-4 p-5 xl:w-40 xl:h-36 rounded-xl text-center`}
 		>
-			<div className="w-7 h-7 sm:w-10 sm:h-10 xl:w-12 xl:h-12 ">
+			<div className="w-8 h-8 sm:w-10 sm:h-10 xl:w-12 xl:h-12">
 				<img
 					className="object-contain w-full h-full"
 					src={skillIcon}
