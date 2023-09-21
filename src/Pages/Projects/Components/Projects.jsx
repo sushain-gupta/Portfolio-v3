@@ -22,7 +22,7 @@ const Projects = () => {
 	}, [keyword])
 
 	return (
-		<section className="flex flex-col items-center w-full gap-5 p-10 py-20 mx-auto">
+		<section className="flex flex-col items-center w-full gap-5 xl:p-10 py-20 mx-auto">
 			<div className="flex rounded-full xl:w-96 bg-slate-50 ring-1 ring-gray-300">
 				<input
 					className="w-full px-5 py-2 bg-transparent rounded-full focus:outline-none"
