@@ -8,7 +8,7 @@ import { Link as RouterLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import { useInView } from "framer-motion";
 import { about } from "../../../data/About";
-import memoji from  "../../../data/assets/png/memoji2.png"
+import memoji from "../../../data/assets/png/memoji2.png"
 
 const About = () => {
 	const ref = useRef(null);
@@ -44,7 +44,7 @@ const About = () => {
 						}}
 						target="_blank"
 						to={about.socialLinks.linkedin}
-						className="p-2 duration-500 rounded-full bg-sky-600 hover:rotate-6 text-slate-50 focus:outline-none focus:outline-slate-500"
+						className="p-2 rounded-full bg-sky-600 text-slate-50 focus:outline-none focus:outline-slate-500"
 					>
 						<FaLinkedinIn />
 					</RouterLink>
@@ -60,7 +60,7 @@ const About = () => {
 								}}
 								to={about.socialLinks.github}
 								target="_blank"
-								className="p-2 duration-500 rounded-full bg-slate-800 hover:rotate-6 text-slate-50 focus:outline-none focus:outline-slate-500"
+								className="p-2 rounded-full bg-slate-800 text-slate-50 focus:outline-none focus:outline-slate-500"
 							>
 								<AiFillGithub />
 							</RouterLink>
@@ -76,7 +76,7 @@ const About = () => {
 						}}
 						to={about.socialLinks.instagram}
 						target="_blank"
-						className="p-2 duration-500 rounded-full bg-gradient-to-br hover:rotate-6 from-fuchsia-500 via-red-600 to-orange-400 text-slate-50 focus:outline-none focus:outline-slate-500"
+						className="p-2 rounded-full bg-gradient-to-br from-fuchsia-500 via-red-600 to-orange-400 text-slate-50 focus:outline-none focus:outline-slate-500"
 					>
 						<AiOutlineInstagram />
 					</RouterLink>
@@ -92,7 +92,7 @@ const About = () => {
 								}}
 								to={about.socialLinks.instagram}
 								target="_blank"
-								className="p-2 duration-500 rounded-full bg-gradient-to-br hover:-rotate-6 bg-sky-500 focus:outline-none focus:outline-slate-500"
+								className="p-2 rounded-full bg-gradient-to-br bg-sky-500 focus:outline-none focus:outline-slate-500"
 							>
 								<AiOutlineTwitter />
 							</RouterLink>
@@ -149,11 +149,11 @@ const About = () => {
 					style={{
 						transform: isInView ? "none" : "translateY(200px)",
 						opacity: isInView ? 1 : 0,
-						transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+						transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s"
 					}}
 					target="_blank"
 					to={about.socialLinks.linkedin}
-					className="p-2 duration-500 rounded-full shadow-xl bg-sky-600 hover:rotate-6 text-slate-50 focus:outline-none focus:outline-slate-500"
+					className="p-2 duration-500 hover:shadow-sky-300 rounded-full shadow-lg bg-sky-600 hover:rotate-6 text-slate-50 focus:outline-none focus:outline-slate-500"
 				>
 					<FaLinkedinIn />
 				</RouterLink>
@@ -163,11 +163,11 @@ const About = () => {
 					style={{
 						transform: isInView ? "none" : "translateY(200px)",
 						opacity: isInView ? 1 : 0,
-						transition: "all 1.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+						transition: "all 1.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s"
 					}}
 					to={about.socialLinks.github}
 					target="_blank"
-					className="p-2 duration-500 rounded-full shadow-xl bg-slate-800 hover:rotate-6 text-slate-50 focus:outline-none focus:outline-slate-500"
+					className="p-2 duration-500 hover:shadow-slate-400 rounded-full shadow-lg bg-slate-800 hover:rotate-6 text-slate-50 focus:outline-none focus:outline-slate-500"
 				>
 					<AiFillGithub />
 				</RouterLink>
@@ -177,11 +177,11 @@ const About = () => {
 					style={{
 						transform: isInView ? "none" : "translateY(200px)",
 						opacity: isInView ? 1 : 0,
-						transition: "all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+						transition: "all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s"
 					}}
 					to={about.socialLinks.instagram}
 					target="_blank"
-					className="p-2 duration-500 rounded-full shadow-xl bg-gradient-to-br hover:rotate-6 from-fuchsia-500 via-red-600 to-orange-400 text-slate-50 focus:outline-none focus:outline-slate-500"
+					className="p-2 hover:shadow-rose-300 shadow-lg rounded-full bg-gradient-to-br from-fuchsia-500 via-red-600 to-orange-400 text-slate-50 focus:outline-none focus:outline-slate-500"
 				>
 					<AiOutlineInstagram />
 				</RouterLink>

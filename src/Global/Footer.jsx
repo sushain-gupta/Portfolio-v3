@@ -44,7 +44,7 @@ const Footer = () => {
 						<Link
 							to={about.socialLinks.linkedin}
 							target="_blank"
-							className="p-2 duration-500 rounded-full shadow-xl bg-sky-600 hover:rotate-6 text-slate-50"
+							className="p-2 rounded-full shadow-lg duration-500 hover:shadow-sky-800 bg-sky-600 text-slate-50"
 						>
 							<FaLinkedinIn />
 						</Link>
@@ -54,19 +54,16 @@ const Footer = () => {
 								<Link
 									to={about.socialLinks.github}
 									target="_blank"
-									className="p-2 duration-500 rounded-full shadow-xl bg-slate-800 hover:rotate-6 text-slate-50"
+									className="p-2 rounded-full duration-500 hover:shadow-slate-800 shadow-lg bg-slate-800 text-slate-50"
 								>
 									<AiFillGithub />
 								</Link>
 							)}
 
-
-
-
 						<Link
 							to={about.socialLinks.instagram}
 							target="_blank"
-							className="p-2 duration-500 rounded-full shadow-xl bg-gradient-to-br hover:rotate-6 from-fuchsia-500 via-red-600 to-orange-400 text-slate-50"
+							className="p-2 rounded-full duration-500 hover:shadow-rose-800 shadow-lg bg-gradient-to-br from-fuchsia-500 via-red-600 to-orange-400 text-slate-50"
 						>
 							<AiOutlineInstagram />
 						</Link>
@@ -77,7 +74,7 @@ const Footer = () => {
 								<Link
 									to={about.socialLinks.twitter}
 									target="_blank"
-									className="p-2 duration-500 rounded-full shadow-xl bg-gradient-to-br hover:-rotate-6 bg-sky-500 text-slate-50"
+									className="p-2 rounded-full shadow-xl bg-gradient-to-br bg-sky-500 text-slate-50"
 								>
 									<AiOutlineTwitter />
 								</Link>
