@@ -21,6 +21,7 @@ const Home = () => {
 					This library includes my major as well as minor projects. Making your project{" "}
 					<span className="px-1 rounded-lg bg-emerald-100">search</span> easy, based on title, techstack or library used.
 				</p>
+				<span class="sr-only">contact email - sushain.work@gmail.com</span>
 			</div>
 
 			<div
