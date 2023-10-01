@@ -17,7 +17,13 @@ export const experience = [
 			"https://res.cloudinary.com/dkezwrb3a/image/upload/v1696175985/Portfolio/exp/Untitled_design_6_d8u4nv.png",
 		jobRole: "Freelance",
 		duration: "Aug 2023 - Present",
-		techstack: ["ReactJs", "Tailwind CSS", "MUI", "Redux Toolkit"],
+		techstack: [
+			"ReactJs",
+			"Tailwind CSS",
+			"MUI",
+			"Redux Toolkit",
+			"Framer Motion",
+		],
 		description: [
 			"Developed high-quality and fully-functional Web App Mockup as per the client requirements.",
 			"Implemented PWA using ReactJs, Tailwind CSS, MUI, Redux Toolkit and more other technologies.",
