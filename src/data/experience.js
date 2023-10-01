@@ -21,9 +21,7 @@ export const experience = [
 			"ReactJs",
 			"Tailwind CSS",
 			"MUI",
-			"Redux Toolkit",
-			"Framer Motion",
-		],
+			"Redux Toolkit"],
 		description: [
 			"Developed high-quality and fully-functional Web App Mockup as per the client requirements.",
 			"Implemented PWA using ReactJs, Tailwind CSS, MUI, Redux Toolkit and more other technologies.",
