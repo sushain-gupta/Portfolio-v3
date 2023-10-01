@@ -22,7 +22,7 @@ export const projects = [
 	{
 		Github: "",
 		ImageUrl:
-			"https://res.cloudinary.com/dkezwrb3a/image/upload/v1678200447/Portfolio/projects/smartmockups_leyculot-removebg_ckpbae.png",
+			"https://res.cloudinary.com/dkezwrb3a/image/upload/v1696174781/Portfolio/projects/Untitled_design_4_h7xwm9.png",
 		Library: "TypedJs, Twak.to",
 		ProjectLink: "https://sppuprep.vercel.app",
 		ProjectScale: "M",
