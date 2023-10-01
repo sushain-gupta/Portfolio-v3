@@ -24,10 +24,10 @@ export const projects = [
 		ImageUrl:
 			"https://res.cloudinary.com/dkezwrb3a/image/upload/v1678200447/Portfolio/projects/smartmockups_leyculot-removebg_ckpbae.png",
 		Library: "TypedJs, Twak.to",
-		ProjectLink: "https://sppuprep.tech",
+		ProjectLink: "https://sppuprep.vercel.app",
 		ProjectScale: "M",
-		Techstack: "HTML5, CSS3, JavaScript",
-		Title: "SPPU Prep website",
+		Techstack: "HTML5, Tailwind CSS, JavaScript",
+		Title: "SPPU Prep",
 	},
 	{
 		Github: "https://github.com/sushain-gupta/Portfolio-website",
