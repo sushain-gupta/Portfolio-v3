@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { projects } from "../../../data/projects";
 import ProjectCard from "../../../Global/ProjectCard";
-import memoji from "../../../data/assets/png/projMemoji.png";
+import memoji from "../../../data/assets/projMemoji.svg";
 import { useInView } from "framer-motion";
 
 const RecentProjects = () => {
