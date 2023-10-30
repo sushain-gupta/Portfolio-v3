@@ -18,7 +18,7 @@ const SkillCard = ({ skillIcon, major, skillName, isInView, num }) => {
 					alt={skillName}
 				/>
 			</div>
-			<p className="text-xs sm:text-sm xl:text-base">{skillName}</p>
+			<p className="text-xs sm:text-sm xl:text-base break-words">{skillName}</p>
 		</div>
 	);
 };
