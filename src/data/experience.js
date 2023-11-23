@@ -6,9 +6,8 @@ export const experience = [
 		jobRole: "Freelance",
 		duration: "Aug 2023 - Present",
 		techstack: [
-			"ReactJs (PWA)",
-			"NodeJS",
-			"ExpressJs",
+			"MERN",
+			"PWA",
 			"AWS",
 			"Tailwind CSS",
 			"MUI",
