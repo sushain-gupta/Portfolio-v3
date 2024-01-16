@@ -5,14 +5,7 @@ export const experience = [
 			"https://res.cloudinary.com/dkezwrb3a/image/upload/v1696175985/Portfolio/exp/Untitled_design_6_d8u4nv.png",
 		jobRole: "Freelance",
 		duration: "Aug 2023 - Present",
-		techstack: [
-			"MERN",
-			"PWA",
-			"AWS",
-			"Tailwind CSS",
-			"MUI",
-			"Redux Toolkit",
-		],
+		techstack: ["MERN", "PWA", "AWS", "Tailwind CSS", "MUI", "Redux Toolkit"],
 		description: [
 			"Developed high-quality and fully-functional Web App and Web App Mockup as per the requirements.",
 			"Worked closely with the client to gather requirements, provide updates, and address feedback throughout the project.",
