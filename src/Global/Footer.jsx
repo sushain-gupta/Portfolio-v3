@@ -5,7 +5,7 @@ import { AiFillGithub, AiOutlineInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { about } from "../data/About";
-import memoji from "../data/assets/memoji1.svg"
+import memoji from "../data/assets/memoji1.png"
 
 const Footer = () => {
 	return (

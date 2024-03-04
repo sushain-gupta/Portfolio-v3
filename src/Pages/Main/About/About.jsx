@@ -8,7 +8,7 @@ import { Link as RouterLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import { useInView } from "framer-motion";
 import { about } from "../../../data/About";
-import memoji from "../../../data/assets/memoji2.svg"
+import memoji from "../../../data/assets/memoji2.png"
 
 const About = () => {
 	const ref = useRef(null);
