@@ -1,6 +1,6 @@
 import React from "react";
 import { about } from "../../../data/About";
-import memoji from "../../../data/assets/memoji2.svg"
+import memoji from "../../../data/assets/memoji2.png"
 
 const Home = () => {
 	return (
