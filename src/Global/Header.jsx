@@ -13,6 +13,8 @@ const Header = () => {
 		window.addEventListener("scroll", () => setScrollYVal(window.scrollY));
 	}, []);
 
+	console.log(openSidebar);
+
 	return (
 		<header
 			className={`${scrollYVal > 0 ? "shadow-md bg-white/95 left-0 right-0" : "py-5"
@@ -22,9 +24,9 @@ const Header = () => {
 				<img className="w-full h-full" src={about.logo} alt="logo" />
 			</RouterLink>
 
-			<div onClick={() => setOpenSidebar(false)} className={`${openSidebar ? "translate-x-0" : "translate-x-full"} lg:hidden fixed left-0 w-full bottom-0 h-full bg-white/80 duration-700 backdrop-blur-sm`} />
+			<div onClick={() => setOpenSidebar(false)} className={`${!openSidebar ? "translate-x-full" : "translate-x-0"} lg:hidden fixed left-0 w-full bottom-0 h-full bg-white/80 duration-700 backdrop-blur-sm`} />
 
-			<nav onClick={() => setOpenSidebar(false)} className={`${openSidebar ? "translate-x-0" : "translate-x-full"} fixed lg:static flex-col top-0 bg-white/95 lg:bg-transparent lg:translate-x-0 shadow-2xl lg:shadow-none bottom-0 right-0 w-2/3 sm:w-1/2 lg:w-max p-6 sm:p-8 z-60 lg:flex-row flex gap-5 lg:gap-2 lg:p-1 overflow-hidden duration-500 text-sm md:text-base`}>
+			<nav onClick={() => setOpenSidebar(false)} className={`${!openSidebar ? "translate-x-full" : " translate-x-0"} fixed lg:static flex-col top-0 bg-white/95 lg:bg-transparent lg:translate-x-0 shadow-2xl lg:shadow-none bottom-0 right-0 w-2/3 sm:w-1/2 lg:w-max p-6 sm:p-8 z-60 lg:flex-row flex gap-5 lg:gap-2 lg:p-1 overflow-hidden duration-500 text-sm md:text-base`}>
 				<button onClick={() => setOpenSidebar(false)} className="p-2 ml-auto overflow-hidden text-xl text-red-500 duration-500 rounded-full bg-rose-100 lg:hidden z-60 md:text-2xl">
 					<CgMenuRight />
 				</button>
