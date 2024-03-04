@@ -11,6 +11,9 @@ export default defineConfig(() => {
 		build: {
 			outDir: "build",
 		},
+		optimizeDeps: {
+			exclude: ["image.svg" /* add more image file extensions */],
+		},
 		plugins: [react(), svgr({ svgrOptions: { icon: true } })],
 	};
 });
