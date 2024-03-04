@@ -2,7 +2,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import React from "react";
 import { Link } from "react-scroll";
 import { about } from "../../../data/About";
-import memoji from "../../../data/assets/memoji1.png"
+import memoji from "../../../data/assets/memoji1.svg"
 
 const Home = () => {
 	return (
