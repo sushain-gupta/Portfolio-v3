@@ -2,7 +2,7 @@ export const experience = [
 	{
 		companyName: "Stratmark Consulting",
 		companyLogo:
-			"https://res.cloudinary.com/dkezwrb3a/image/upload/v1696175985/Portfolio/exp/Untitled_design_6_d8u4nv.png",
+			"https://res.cloudinary.com/sushain/image/upload/v1696175985/Portfolio/exp/Untitled_design_6_d8u4nv.png",
 		jobRole: "Freelance",
 		duration: "Aug 2023 - Present",
 		techstack: ["MERN", "PWA", "AWS", "Tailwind CSS", "MUI", "Redux Toolkit"],
@@ -16,7 +16,7 @@ export const experience = [
 	{
 		companyName: "Codebell Technologies",
 		companyLogo:
-			"https://res.cloudinary.com/dkezwrb3a/image/upload/v1694527181/Portfolio/exp/1686382464747_vc7glk.jpg",
+			"https://res.cloudinary.com/sushain/image/upload/v1694527181/Portfolio/exp/1686382464747_vc7glk.jpg",
 		jobRole: "Intern",
 		duration: "APR 2023 - MAY 2023",
 		techstack: ["HTML5", "Cascading Style Sheets (CSS)", "JavaScript"],
