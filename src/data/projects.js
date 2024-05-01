@@ -4,7 +4,7 @@ export const projects = [
 		ImageUrl:
 			"https://res.cloudinary.com/sushain/image/upload/v1678197663/Portfolio/projects/smartmockups_leybi09m-PhotoRoom.png-PhotoRoom-min_wh7wyy.png",
 		Library: "React Toastify",
-		ProjectLink: "https://merilist.netlify.app/",
+		ProjectLink: "https://meri-list.vercel.app",
 		ProjectScale: "m",
 		Techstack: "React, Bootstrap",
 		Title: "Todo List",
@@ -14,7 +14,7 @@ export const projects = [
 		ImageUrl:
 			"https://res.cloudinary.com/sushain/image/upload/v1678196335/Portfolio/projects/tempchecknow.netlify.app__mac_book__macbookgrey_front-min_d9kxgq.png",
 		Library: "React hot toast",
-		ProjectLink: "https://weath-check.netlify.app",
+		ProjectLink: "https://weath-check.vercel.app/",
 		ProjectScale: "M",
 		Techstack: "ReactJs, Tailwind CSS",
 		Title: "Weather check",
@@ -34,17 +34,17 @@ export const projects = [
 		ImageUrl:
 			"https://res.cloudinary.com/sushain/image/upload/v1678193761/Portfolio/projects/smartmockups_ley94uty-PhotoRoom.png-PhotoRoom-min_otg9xh.png",
 		Library: "EmailJs, Tostify, AOS",
-		ProjectLink: "https://sushaingupta.netlify.app",
+		ProjectLink: "https://dummy-portfolioo.netlify.app/",
 		ProjectScale: "M",
 		Techstack: "HTML5, CSS3, JavaScript, Firebase",
-		Title: "Portfolio Website",
+		Title: "Portfolio Website (Obsolete)",
 	},
 	{
 		Github: "https://github.com/sushain-gupta/agency-web-design",
 		ImageUrl:
 			"https://res.cloudinary.com/sushain/image/upload/v1678195080/Portfolio/projects/agency-design.netlify.app__mac_book__macbookgrey_front_m1nn8a.png",
 		Library: "Swiper Js",
-		ProjectLink: "https://agency-design.netlify.app",
+		ProjectLink: "https://agency-design.vercel.app",
 		ProjectScale: "m",
 		Techstack: "ReactJs, Tailwind CSS",
 		Title: "Agency  design - frontend",

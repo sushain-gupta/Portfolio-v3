@@ -19,7 +19,7 @@ export const skills = [
 	},
 	{
 		skillIcon:
-			"https://res.cloudinary.com/sushain/image/upload/v1674668116/Portfolio/skills/react_zwqsp1.svg",
+			"https://res.cloudinary.com/sushain/image/upload/v1714556927/Portfolio/skills/React_Logo-cropped_gu2amd.svg",
 		skillName: "ReactJs",
 		major: true,
 	},
@@ -27,16 +27,19 @@ export const skills = [
 		skillIcon:
 			"https://res.cloudinary.com/sushain/image/upload/v1698643899/Portfolio/skills/icons8-nodejs_lmjqiz.svg",
 		skillName: "NodeJs",
+		major: true,
 	},
 	{
 		skillIcon:
 			"https://res.cloudinary.com/sushain/image/upload/v1698644086/Portfolio/skills/icons8-express-js_aucg1o.svg",
 		skillName: "ExpressJs",
+		major: true,
 	},
 	{
 		skillIcon:
 			"https://res.cloudinary.com/sushain/image/upload/v1698644406/Portfolio/skills/mongodb_original_wordmark_logo_icon_146425_qknszu.svg",
 		skillName: "MongoDB",
+		major: true,
 	},
 	{
 		skillIcon:
@@ -54,11 +57,24 @@ export const skills = [
 		skillIcon:
 			"https://res.cloudinary.com/sushain/image/upload/v1698645002/Portfolio/skills/svgexport-7_vhqxeb.svg",
 		skillName: "AWS Ec2",
+		major: true,
 	},
 	{
 		skillIcon:
 			"https://res.cloudinary.com/sushain/image/upload/v1698644998/Portfolio/skills/svgexport-9_qst9qj.svg",
 		skillName: "Ec2 Auto Scaling",
+	},
+	{
+		skillIcon:
+			"https://res.cloudinary.com/sushain/image/upload/v1714555747/Portfolio/skills/svgexport-9_kgzgp8.svg",
+		skillName: "AWS S3",
+		major: true,
+	},
+	{
+		skillIcon:
+			"https://res.cloudinary.com/sushain/image/upload/v1714556329/Portfolio/skills/redux_wi5dto.svg",
+		skillName: "Redux Toolkit",
+		major: true,
 	},
 	{
 		skillIcon:
@@ -84,6 +100,11 @@ export const skills = [
 	},
 	{
 		skillIcon:
+			"https://res.cloudinary.com/sushain/image/upload/v1674668116/Portfolio/skills/python_drwvw3.svg",
+		skillName: "Python",
+	},
+	{
+		skillIcon:
 			"https://res.cloudinary.com/sushain/image/upload/v1698644156/Portfolio/skills/icons8-git_t7nlho.svg",
 		skillName: "Git",
 		major: true,
@@ -92,6 +113,12 @@ export const skills = [
 		skillIcon:
 			"https://res.cloudinary.com/sushain/image/upload/v1678096601/Portfolio/skills/github-logo_s0trsu.png",
 		skillName: "GitHub",
+		major: true,
+	},
+	{
+		skillIcon:
+			"https://res.cloudinary.com/sushain/image/upload/v1714557459/Portfolio/skills/vercel.svg",
+		skillName: "Vercel",
 		major: true,
 	},
 ];
