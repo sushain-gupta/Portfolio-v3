@@ -21,7 +21,7 @@ export const about = {
 		// twitter: "https://www.twitter.com/sushain.gupta",
 	},
 	resumeLink:
-		"https://firebasestorage.googleapis.com/v0/b/sushains-portfolio.appspot.com/o/Sushain%20Rajesh%20Gupta.pdf?alt=media&token=361168f2-05eb-4039-91b6-b827c27c7457",
+		"https://firebasestorage.googleapis.com/v0/b/sushains-portfolio.appspot.com/o/Sushain%20Rajesh%20Gupta.pdf?alt=media&token=d07cc578-fb96-49b4-a296-b52d1f79caaa",
 
 	hostedUrl: "https://sushaingupta.netlify.app/",
 };
