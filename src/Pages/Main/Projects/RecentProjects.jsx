@@ -38,7 +38,9 @@ const RecentProjects = () => {
 					.reverse()
 					.slice(0, 3)
 					.map((project, key) => {
-						return <ProjectCard key={key} project={project}
+						return <ProjectCard
+							key={key}
+							project={project}
 							styles={{
 								transform: isInView ? "none" : "translateY(200px)",
 								opacity: isInView ? 1 : 0,

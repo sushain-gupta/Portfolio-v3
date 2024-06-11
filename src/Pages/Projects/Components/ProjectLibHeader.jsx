@@ -29,8 +29,8 @@ const ProjectLibHeader = () => {
 
 				<Link
 					onClick={() => history.back() && setOpenSidebar(false)}
-					spy={true}
-					smooth={true}
+					spy="true"
+					smooth="true"
 					className="flex items-center gap-2 px-2 py-1.5 lg:py-0.5 rounded-lg lg:rounded-full duration-300 hover:bg-emerald-200 cursor-pointer"
 				>
 					<AiFillHome /> Home
