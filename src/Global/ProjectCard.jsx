@@ -39,7 +39,7 @@ const ProjectCard = ({ project, styles, initials }) => {
 						</div>
 
 						<div className="flex flex-col justify-between px-6 pb-4">
-							<p className="mb-2 text-xl font-bold">{project.Title}</p>
+							<p className="mb-2 text-lg font-bold text-black">{project.Title}</p>
 
 							<div>
 								<p>
@@ -103,7 +103,7 @@ const ProjectCard = ({ project, styles, initials }) => {
 						</div>
 
 						<div className="flex flex-col justify-between px-6 pb-4">
-							<p className="mb-2 text-xl font-bold">{project.Title}</p>
+							<p className="mb-2 text-lg font-bold text-black">{project.Title}</p>
 
 							<div>
 								<p>
