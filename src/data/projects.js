@@ -48,9 +48,9 @@ export const projects = [
 		Github: "https://github.com/sushain-gupta/VoterList-Pro",
 		ImageUrl:
 			"https://res.cloudinary.com/sushain/image/upload/v1718210912/Portfolio/projects/Untitled_design-Photoroom_i3ev7p.png",
-		Library: "Swiper Js",
-		ProjectLink: "https://agency-design.vercel.app",
-		Techstack: "ReactJs, Tailwind CSS",
+		Library: "React-scroll",
+		ProjectLink: "https://voterlistpro.vercel.app/",
+		Techstack: "ReactJs, Tailwind CSS, Python (For OCR)",
 		Title: "VoterList Pro: Electoral List Data Extraction",
 	},
 ];
