@@ -6,6 +6,9 @@ export default {
 			height: {
 				screen: "100dvh",
 			},
+			backgroundImage: {
+				homeBg: "url('/src/data/assets/bg.png')",
+			},
 		},
 	},
 	plugins: [],
