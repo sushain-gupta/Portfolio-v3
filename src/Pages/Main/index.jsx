@@ -3,7 +3,7 @@ import Header from '../../Global/Header'
 import Home from './Home/Home'
 import About from './About/About'
 import Skills from './Skills/Skills'
-import RecentProjects from './Projects/RecentProjects'
+import RecentProjects from './RecentProjects/RecentProjects'
 import Experience from './Experience/Experience'
 
 const Main = () => {
