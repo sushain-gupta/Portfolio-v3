@@ -4,7 +4,6 @@ import Projects from "./Components/Projects";
 import ProjectLibHeader from "./Components/ProjectLibHeader";
 import { Helmet } from "react-helmet";
 
-
 const ProjectLibrary = () => {
 	document.body.scrollTop = 0; // For Safari
 	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -13,6 +12,10 @@ const ProjectLibrary = () => {
 		<section className="relative ">
 			<Helmet>
 				<title>Project Library | Sushain Gupta</title>
+				<meta property="og:url" content="https://sushaingupta.vercel.app/projects" />
+				<link rel="canonical" href="https://sushaingupta.vercel.app/projects" />
+				<meta name="description" content="Explore the diverse projects of Sushain Gupta, an India-based freelancer and web developer. From frontend to full stack, discover the innovative and modern web development projects I have worked on. Open to new opportunities and collaborations." />
+
 			</Helmet>
 
 			<ProjectLibHeader />
@@ -21,7 +24,6 @@ const ProjectLibrary = () => {
 				<Home />
 				<Projects />
 			</div>
-
 		</section >
 	);
 };
