@@ -51,6 +51,16 @@ const Header = () => {
 
 				<Link
 					onClick={() => setOpenSidebar(false)}
+					to="skills"
+					spy={true}
+					smooth={true}
+					className="px-2 py-1.5 lg:py-0.5 rounded-lg lg:rounded-full duration-300 hover:bg-emerald-200 cursor-pointer"
+				>
+					Skills
+				</Link>
+
+				<Link
+					onClick={() => setOpenSidebar(false)}
 					to="projects"
 					spy={true}
 					smooth={true}
