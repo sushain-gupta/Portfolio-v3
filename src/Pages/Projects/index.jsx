@@ -12,8 +12,6 @@ const ProjectLibrary = () => {
 		<section className="relative ">
 			<Helmet>
 				<title>Project Library | Sushain Gupta</title>
-				<meta property="og:url" content="https://sushaingupta.vercel.app/projects" />
-				<link rel="canonical" href="https://sushaingupta.vercel.app/projects" />
 				<meta name="description" content="Explore the diverse projects of Sushain Gupta, an India-based freelancer and web developer. From frontend to full stack, discover the innovative and modern web development projects I have worked on. Open to new opportunities and collaborations." />
 
 			</Helmet>
