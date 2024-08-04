@@ -3,6 +3,7 @@ import Footer from "./Global/Footer";
 import { Route, Routes } from "react-router-dom";
 import ProjectLibrary from "./Pages/Projects";
 import Main from "./Pages/Main";
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
 	return (
