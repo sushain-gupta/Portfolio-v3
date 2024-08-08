@@ -25,7 +25,7 @@ const Main = () => {
         <>
             <Header />
 
-            <div className="relative flex flex-col gap-5 px-7 sm:px-10 md:px-14 3xl:px-24">
+            <div className="relative flex flex-col gap-5 px-5 sm:px-10 md:px-14 3xl:px-24">
                 <Home />
                 <About />
                 <Skills />

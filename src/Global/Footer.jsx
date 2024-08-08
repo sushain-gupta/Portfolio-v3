@@ -24,7 +24,7 @@ const Footer = () => {
 				</Link>
 			</div>
 
-			<footer className="relative flex pt-20 bg-neutral-900 p-7 sm:px-14 lg:px-16 xl:px-24 sm:pt-16 text-slate-300">
+			<footer className="relative flex pt-20 bg-neutral-900 p-5 sm:px-14 lg:px-16 xl:px-24 sm:pt-16 text-slate-300">
 				<div className="flex flex-col w-full divide-y lg:flex-row lg:divide-y-0 lg:divide-x">
 					<div className="flex items-center justify-center flex-1 gap-3 py-10 lg:py-0">
 						<div className="w-24 h-24 overflow-hidden rounded-full sm:w-28 sm:h-28">
