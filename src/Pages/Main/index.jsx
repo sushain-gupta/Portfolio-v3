@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../../Global/Header'
 import Home from './Home/Home'
 import About from './About/About'
@@ -7,8 +7,19 @@ import RecentProjects from './RecentProjects/RecentProjects'
 import Experience from './Experience/Experience'
 
 const Main = () => {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    const animationPlayed = sessionStorage.getItem('animationPlayed') || false;
+
+    useEffect(() => {
+        if (!animationPlayed) {
+            document.documentElement.style.overflow = 'hidden';
+
+            const timeoutId = setTimeout(() => {
+                document.documentElement.style.overflow = '';
+            }, 6500);
+
+            return () => clearTimeout(timeoutId);
+        }
+    }, [animationPlayed]);
 
     return (
         <>

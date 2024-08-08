@@ -1,3 +1,4 @@
+import { AiOutlineLink } from "react-icons/ai"; 
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { IoIosClose } from "react-icons/io";
 import React, { useState } from "react";
@@ -59,21 +60,21 @@ const ProjectCard = ({ project, styles, initials }) => {
 								className="flex justify-between gap-6 m-auto text-3xl w-max h-max">
 								<Link
 									to={project.Github}
-									className="p-2 duration-500 rounded-full bg-slate-50 hover:rotate-6"
+									className="p-2 duration-500 rounded-full text-white hover:rotate-6 bg-black/50"
 								>
 									<AiFillGithub />
 								</Link>
 
 								<Link
 									to={project.ProjectLink}
-									className="p-2 duration-500 rounded-full bg-slate-50 hover:rotate-6"
+									className="p-2 duration-500 rounded-full text-white hover:rotate-6 bg-sky-500/70"
 								>
-									<HiOutlineExternalLink />
+									<AiOutlineLink />
 								</Link>
 
 								<button
 									onClick={() => setOpen(false)}
-									className="p-2 duration-500 rounded-full bg-slate-50 hover:rotate-90"
+									className="p-2 duration-500 rounded-full bg-rose-500/70 hover:rotate-90 text-white"
 								>
 									<IoIosClose />
 								</button>
@@ -123,21 +124,21 @@ const ProjectCard = ({ project, styles, initials }) => {
 								className="flex justify-between gap-6 m-auto text-3xl w-max h-max">
 								<Link
 									to={project.Github}
-									className="p-2 duration-500 rounded-full bg-slate-50 hover:rotate-6"
+									className="p-2 duration-500 rounded-full text-white hover:rotate-6 bg-black/50"
 								>
 									<AiFillGithub />
 								</Link>
 
 								<Link
 									to={project.ProjectLink}
-									className="p-2 duration-500 rounded-full bg-slate-50 hover:rotate-6"
+									className="p-2 duration-500 rounded-full text-white hover:rotate-6 bg-sky-500/70"
 								>
-									<HiOutlineExternalLink />
+									<AiOutlineLink />
 								</Link>
 
 								<button
 									onClick={() => setOpen(false)}
-									className="p-2 duration-500 rounded-full bg-slate-50 hover:rotate-90"
+									className="p-2 duration-500 rounded-full bg-rose-500/70 hover:rotate-90 text-white"
 								>
 									<IoIosClose />
 								</button>

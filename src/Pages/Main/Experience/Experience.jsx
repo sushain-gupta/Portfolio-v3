@@ -9,16 +9,17 @@ const Experience = () => {
 
 	return (
 		<section
-			ref={ref}
-			style={{
-				transform: isInView ? "none" : "translateY(100px)",
-				opacity: isInView ? 1 : 0,
-				transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-			}}
 			name="experience"
 			className="flex flex-col items-center justify-center min-h-screen mb-24 sm:mb-12"
 		>
-			<div className="sm:bg-gray-100 rounded-3xl">
+			<div
+				ref={ref}
+				style={{
+					transform: isInView ? "none" : "translateY(100px)",
+					opacity: isInView ? 1 : 0,
+					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+				}}
+				className="sm:bg-gray-100 rounded-3xl">
 				<div className="container max-w-5xl mx-auto sm:px-4 sm:py-12">
 					<div className="flex flex-col gap-6 mx-4 lg:flex-row">
 						<div className="">

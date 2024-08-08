@@ -1,10 +1,19 @@
-/* Importing Google Font: Poppins with font weights 400, 600, and 700 */
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap");
-
 /* Importing Tailwind CSS base styles, components, and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Importing Fonts */
+@font-face {
+	font-family: "Catamaran";
+	src: url("../public/fonts/Catamaran-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Plus Jakarta Sans";
+	src: url("../public/fonts/PlusJakartaSans-VariableFont_wght.ttf")
+		format("truetype");
+}
 
 /* Applying global styles to root elements */
 html,
@@ -15,11 +24,11 @@ body,
 	width: 100dvw;
 	min-height: 100dvh;
 	overflow-x: hidden;
-	font-family: "Plus Jakarta Sans", "Poppins", sans-serif;
+	font-family: "Plus Jakarta Sans";
 }
 
 .myfont {
-	font-family: "Plus Jakarta Sans", "Poppins", sans-serif;
+	font-family: "Plus Jakarta Sans";
 }
 
 .heading {

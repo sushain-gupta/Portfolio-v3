@@ -1,3 +1,4 @@
+import { IoCallOutline } from "react-icons/io5";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 import { AiOutlineInstagram } from "react-icons/ai";
@@ -104,7 +105,7 @@ const About = () => {
 			</div>
 
 			<div className="sm:text-base xl:text-lg lg:w-2/3 xl:w-1/2">
-				<h2 className="hidden text-3xl font-extrabold lg:block xl:text-4xl heading">{about.firstName + " " + about.lastName}</h2>
+				<h2 className="hidden text-3xl font-extrabold lg:block xl:text-5xl heading">{about.firstName + " " + about.lastName}</h2>
 
 				<p className="my-3">
 					I'm an <span className="font-semibold">undergrad</span>, self taught
@@ -114,17 +115,20 @@ const About = () => {
 					comprehensive knowledge of various web development technologies such
 					as{" "}
 					<span className="font-semibold">
-						HTML, CSS, JavaScript, ReactJS, Tailwind CSS, Firebase{" "}
+						HTML, CSS, JavaScript, MERN, Tailwind CSS, Firebase{" "}
 					</span>
 					and{" "}
+
 					<Link
 						tabIndex={4}
 						to="skills"
 						spy={true}
 						smooth={true}
-						className="font-semibold cursor-pointer text-sky-500 hover:underline hover:text-sky-600 focus:outline-none focus:underline"
+						className="py-1.5 lg:py-0.5 rounded-lg lg:rounded-full duration-300 cursor-pointer group"
 					>
-						more
+						<span className="text-sky-500 bg-left-bottom bg-gradient-to-r from-sky-100 to-sky-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-0.5">
+							more
+						</span>
 					</Link>
 					.
 				</p>
@@ -135,12 +139,21 @@ const About = () => {
 					development.
 				</p>
 
-				<RouterLink
-					tabIndex={5}
-					to={about.resumeLink} target="_blank"
-					className="flex items-center my-5 gap-2 hover:bg-emerald-600 px-3 py-1.5 rounded-lg text-slate-50 duration-500 group bg-gradient-to-br from-emerald-400 to-sky-500 hover:bg-gradient-to-bl w-max focus:outline-none focus:outline-slate-500">
-					Resume <CgFileDocument />
-				</RouterLink>
+				<div className="flex gap-4">
+					<RouterLink
+						tabIndex={5}
+						to={about.resumeLink} target="_blank"
+						className="flex items-center my-6 gap-2 px-5 py-1.5 rounded-full text-emerald-700 font-medium text-base duration-500 group w-max focus:outline-none focus:outline-slate-500 ring-1 ring-emerald-700 hover:bg-emerald-700 hover:text-white">
+						Resume <CgFileDocument />
+					</RouterLink>
+
+					<RouterLink
+						tabIndex={5}
+						to="https://topmate.io/sushain/1136121" target="_blank"
+						className="flex items-center my-6 gap-2 px-5 py-1.5 rounded-full text-sky-700 font-medium text-base duration-500 group w-max focus:outline-none focus:outline-slate-500 ring-1 ring-sky-600 hover:bg-sky-600 hover:text-white">
+						Book 1:1 Call <IoCallOutline />
+					</RouterLink>
+				</div>
 			</div>
 
 			<div className="flex-col hidden gap-6 text-3xl xl:flex">

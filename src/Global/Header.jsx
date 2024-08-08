@@ -1,30 +1,44 @@
+import { BiMailSend } from "react-icons/bi";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { CgMenuRight } from "react-icons/cg";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom"
 import { about } from "../data/About";
+import { motion } from "framer-motion"
 
 const Header = () => {
 	const [openSidebar, setOpenSidebar] = useState(false)
 	const [scrollYVal, setScrollYVal] = useState(window.scrollY);
+
+	const animationPlayed = sessionStorage.getItem('animationPlayed') || false;
+
+	useEffect(() => {
+		if (!animationPlayed) {
+			sessionStorage.setItem('animationPlayed', 'true');
+		}
+	}, [animationPlayed])
 
 	useEffect(() => {
 		window.addEventListener("scroll", () => setScrollYVal(window.scrollY));
 	}, []);
 
 	return (
-		<header
-			className={`${scrollYVal > 0 ? "shadow-md bg-white/95 left-0 right-0" : "py-5"
-				} flex fixed justify-between items-center top-0 w-full z-50 duration-500 px-5 sm:px-8 lg:px-14 xl:px-24 rounded-b-2xl`}
+		<motion.header
+			className={`${scrollYVal > 0 ? "bg-white/80 backdrop-blur-sm left-0 right-0 py-3" : "py-6 border-b border-white"
+				} border-b flex fixed justify-between items-center top-0 w-full z-50 duration-500 px-5 sm:px-8 lg:px-14 xl:px-24`}
+
+			initial={{ y: 0, opacity: 0 }}
+			animate={{ y: 0, opacity: 1 }}
+			transition={animationPlayed ? {} : { duration: 2, delay: 3.5 }}
 		>
-			<RouterLink to={about.hostedUrl} className="w-14 h-14 sm:w-16 sm:h-16">
-				<img className="w-full h-full" src={about.logo} alt="logo" />
+			<RouterLink to={about.hostedUrl} className="w-12 h-12 sm:w-12 sm:h-12">
+				<img className="w-full h-full rounded-full" src={about.logo} alt="logo" />
 			</RouterLink>
 
-			<div onClick={() => setOpenSidebar(false)} className={`${openSidebar ? "translate-x-0" : "translate-x-full"} lg:hidden fixed left-0 w-full bottom-0 h-full bg-white/80 duration-700 backdrop-blur-sm`} />
+			<div onClick={() => setOpenSidebar(false)} className={`${openSidebar ? "translate-x-0" : "translate-x-full"} lg:hidden fixed left-0 w-full h-screen lg:h-full bottom-0 bg-white/80 duration-700 backdrop-blur-sm`} />
 
-			<nav onClick={() => setOpenSidebar(false)} className={`${openSidebar ? "translate-x-0" : "translate-x-full"} fixed lg:static flex-col top-0 bg-white/95 lg:bg-transparent lg:translate-x-0 shadow-2xl lg:shadow-none bottom-0 right-0 w-2/3 sm:w-1/2 lg:w-max p-6 sm:p-8 z-60 lg:flex-row flex gap-5 lg:gap-2 lg:p-1 overflow-hidden duration-500 text-sm md:text-base`}>
+			<nav onClick={() => setOpenSidebar(false)} className={`${openSidebar ? "translate-x-0" : "translate-x-full"} fixed lg:static h-screen lg:h-full flex-col top-0 bg-white lg:bg-transparent lg:translate-x-0 shadow-2xl lg:shadow-none bottom-0 right-0 w-2/3 sm:w-1/2 lg:w-max p-6 sm:p-8 z-60 lg:flex-row flex gap-5 lg:gap-10 lg:p-1 overflow-hidden duration-500 text-sm md:text-base`}>
 				<button onClick={() => setOpenSidebar(false)} className="p-2 ml-auto overflow-hidden text-xl text-red-500 duration-500 rounded-full bg-rose-100 lg:hidden z-60 md:text-2xl">
 					<CgMenuRight />
 				</button>
@@ -34,9 +48,11 @@ const Header = () => {
 					to="home"
 					spy={true}
 					smooth={true}
-					className="px-2 py-1.5 lg:py-0.5 rounded-lg lg:rounded-full duration-300 hover:bg-emerald-200 cursor-pointer"
+					className="px-2 py-1.5 lg:py-0.5 duration-300 cursor-pointer group"
 				>
-					Home
+					<span className="bg-left-bottom bg-gradient-to-r from-emerald-100 to-emerald-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
+						Home
+					</span>
 				</Link>
 
 				<Link
@@ -44,9 +60,11 @@ const Header = () => {
 					to="about"
 					spy={true}
 					smooth={true}
-					className="px-2 py-1.5 lg:py-0.5 rounded-lg lg:rounded-full duration-300 hover:bg-emerald-200 cursor-pointer"
+					className="px-2 py-1.5 lg:py-0.5 duration-300 cursor-pointer group"
 				>
-					About
+					<span className="bg-left-bottom bg-gradient-to-r from-emerald-100 to-emerald-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
+						About
+					</span>
 				</Link>
 
 				<Link
@@ -54,9 +72,11 @@ const Header = () => {
 					to="skills"
 					spy={true}
 					smooth={true}
-					className="px-2 py-1.5 lg:py-0.5 rounded-lg lg:rounded-full duration-300 hover:bg-emerald-200 cursor-pointer"
+					className="px-2 py-1.5 lg:py-0.5 duration-300 cursor-pointer group"
 				>
-					Skills
+					<span className="bg-left-bottom bg-gradient-to-r from-emerald-100 to-emerald-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
+						Skills
+					</span>
 				</Link>
 
 				<Link
@@ -64,9 +84,11 @@ const Header = () => {
 					to="projects"
 					spy={true}
 					smooth={true}
-					className="px-2 py-1.5 lg:py-0.5 rounded-lg lg:rounded-full duration-300 hover:bg-emerald-200 cursor-pointer"
+					className="px-2 py-1.5 lg:py-0.5 duration-300 cursor-pointer group"
 				>
-					Projects
+					<span className="bg-left-bottom bg-gradient-to-r from-emerald-100 to-emerald-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
+						Projects
+					</span>
 				</Link>
 
 				<Link
@@ -74,9 +96,11 @@ const Header = () => {
 					to="experience"
 					spy={true}
 					smooth={true}
-					className="px-2 py-1.5 lg:py-0.5 rounded-lg lg:rounded-full duration-300 hover:bg-emerald-200 cursor-pointer"
+					className="px-2 py-1.5 lg:py-0.5 duration-300 cursor-pointer group"
 				>
-					Experience
+					<span className="bg-left-bottom bg-gradient-to-r from-emerald-100 to-emerald-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
+						Experience
+					</span>
 				</Link>
 
 				{/* <Link
@@ -84,17 +108,20 @@ const Header = () => {
 					to="testimonials"
 					spy={true}
 					smooth={true}
-					className="px-2 py-1.5 lg:py-0.5 rounded-lg lg:rounded-full duration-300 hover:bg-emerald-200 cursor-pointer"
+					className="px-2 py-1.5 lg:py-0.5 duration-300 cursor-pointer group"
 				>
-					Experience
+					<span className="bg-left-bottom bg-gradient-to-r from-emerald-100 to-emerald-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
+						Testimonials
+					</span>
 				</Link> */}
 
 				<RouterLink
 					target="_blank"
 					to={`mailto:${about.email}`}
 					onClick={() => setOpenSidebar(false)}
-					className="px-3 py-2 mt-auto text-center duration-500 rounded-lg lg:hidden hover:bg-emerald-600 text-slate-50 group bg-gradient-to-br from-emerald-400 to-sky-500 hover:bg-gradient-to-bl">
+					className="mt-auto mx-auto lg:hidden group flex gap-2 items-center bg-neutral-900 text-white w-full justify-center py-3 rounded-md">
 					Get in touch
+					<BiMailSend className="text-rose-400 text-2xl" />
 				</RouterLink>
 			</nav>
 
@@ -104,12 +131,17 @@ const Header = () => {
 			</button>
 
 			<RouterLink
-				to={`mailto:${about.email}`}
+				to="https://topmate.io/sushain"
 				target="_blank"
-				className="hidden lg:flex items-center gap-2 hover:bg-emerald-600 px-3 py-1.5 rounded-lg text-slate-50 duration-500 group bg-gradient-to-br from-emerald-400 to-sky-500 hover:bg-gradient-to-bl">
-				Get in touch
+				className="hidden lg:flex gap-1.5 px-2 lg:py-0.5 duration-300 cursor-pointer group">
+				<span className="bg-left-bottom flex items-center gap-1.5 bg-gradient-to-r from-rose-100 to-rose-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
+					Get in touch
+
+					<BiMailSend className="text-rose-500 text-2xl" />
+				</span>
+
 			</RouterLink>
-		</header>
+		</motion.header>
 	);
 };
 

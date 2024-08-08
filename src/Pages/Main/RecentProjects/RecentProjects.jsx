@@ -1,10 +1,10 @@
-import { IoIosArrowForward } from "react-icons/io";
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { projects } from "../../../data/projects";
 import ProjectCard from "../../../Global/ProjectCard";
 import memoji from "../../../data/assets/projMemoji.svg";
 import { useInView } from "framer-motion";
+import { about } from "../../../data/About";
 
 const RecentProjects = () => {
 	const ref = useRef(null);
@@ -19,11 +19,15 @@ const RecentProjects = () => {
 					<p className="text-center">
 						Here are a few past projects I've worked on. Want to see more?
 						{" "}
+
 						<Link
-							to="/projects"
-							className="inline-flex items-center text-base group text-sky-500 hover:text-sky-600 hover:underline"
+							target="_blank"
+							to={`mailto:${about.email}`}
+							className="py-1.5 lg:py-0.5 rounded-lg lg:rounded-full duration-300 cursor-pointer group"
 						>
-							View More <IoIosArrowForward className="text-sm" />
+							<span className="text-rose-500 bg-left-bottom bg-gradient-to-r from-red-100 to-red-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-0.5">
+								Get in touch
+							</span>
 						</Link>
 					</p>
 				</div>
