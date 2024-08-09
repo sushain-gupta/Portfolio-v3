@@ -38,11 +38,11 @@ const About = () => {
 				<div className="flex justify-center gap-5 my-5 text-2xl xl:hidden sm:flex-col lg:flex-row sm:absolute lg:static -right-20 top-20 lg:my-10">
 					<RouterLink
 						tabIndex={6}
-						style={{
-							transform: isInView ? "scale(1)" : "scale(0)",
-							opacity: isInView ? 1 : 0,
-							transition: "all 0.8s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-						}}
+						// style={{
+						// 	transform: isInView ? "scale(1)" : "scale(0)",
+						// 	opacity: isInView ? 1 : 0,
+						// 	transition: "all 0.8s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+						// }}
 						target="_blank"
 						to={about.socialLinks.linkedin}
 						className="p-2 rounded-full bg-sky-600 text-slate-50 focus:outline-none focus:outline-slate-500"
@@ -54,11 +54,11 @@ const About = () => {
 						about.socialLinks.github && (
 							<RouterLink
 								tabIndex={7}
-								style={{
-									transform: isInView ? "scale(1)" : "scale(0)",
-									opacity: isInView ? 1 : 0,
-									transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-								}}
+								// style={{
+								// 	transform: isInView ? "scale(1)" : "scale(0)",
+								// 	opacity: isInView ? 1 : 0,
+								// 	transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+								// }}
 								to={about.socialLinks.github}
 								target="_blank"
 								className="p-2 rounded-full bg-slate-800 text-slate-50 focus:outline-none focus:outline-slate-500"
@@ -70,11 +70,11 @@ const About = () => {
 
 					<RouterLink
 						tabIndex={8}
-						style={{
-							transform: isInView ? "scale(1)" : "scale(0)",
-							opacity: isInView ? 1 : 0,
-							transition: "all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-						}}
+						// style={{
+						// 	transform: isInView ? "scale(1)" : "scale(0)",
+						// 	opacity: isInView ? 1 : 0,
+						// 	transition: "all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+						// }}
 						to={about.socialLinks.instagram}
 						target="_blank"
 						className="p-2 rounded-full bg-gradient-to-br from-fuchsia-500 via-red-600 to-orange-400 text-slate-50 focus:outline-none focus:outline-slate-500"
@@ -86,11 +86,11 @@ const About = () => {
 						about.socialLinks.twitter && (
 							<RouterLink
 								tabIndex={9}
-								style={{
-									transform: isInView ? "scale(1)" : "scale(0)",
-									opacity: isInView ? 1 : 0,
-									transition: "all 1.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-								}}
+								// style={{
+								// 	transform: isInView ? "scale(1)" : "scale(0)",
+								// 	opacity: isInView ? 1 : 0,
+								// 	transition: "all 1.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+								// }}
 								to={about.socialLinks.instagram}
 								target="_blank"
 								className="p-2 rounded-full bg-gradient-to-br bg-sky-500 focus:outline-none focus:outline-slate-500"
