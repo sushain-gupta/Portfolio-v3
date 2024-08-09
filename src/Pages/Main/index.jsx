@@ -12,9 +12,11 @@ const Main = () => {
     useEffect(() => {
         if (!animationPlayed) {
             document.documentElement.style.overflow = 'hidden';
+            document.body.style.overflow = 'hidden';
 
             const timeoutId = setTimeout(() => {
                 document.documentElement.style.overflow = '';
+                document.body.style.overflow = '';
             }, 6500);
 
             return () => clearTimeout(timeoutId);

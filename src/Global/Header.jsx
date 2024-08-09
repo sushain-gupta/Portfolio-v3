@@ -25,7 +25,7 @@ const Header = () => {
 
 	return (
 		<motion.header
-			className={`${scrollYVal > 0 ? "bg-white/80 backdrop-blur-sm left-0 right-0 py-3" : "py-6 border-none"
+			className={`${scrollYVal > 0 ? "bg-white/80 backdrop-blur-sm py-3" : "py-6 border-white/0"
 				} border-b flex fixed justify-between items-center top-0 w-full z-50 duration-500 px-5 sm:px-8 lg:px-14 xl:px-24`}
 
 			initial={{ y: 0, opacity: 0 }}
