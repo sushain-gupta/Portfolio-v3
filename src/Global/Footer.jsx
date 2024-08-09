@@ -12,7 +12,7 @@ const Footer = () => {
 		<section>
 			<div className="flex flex-col items-center gap-8 justify-center mb-32 text-center p-7">
 				<p className="text-lg sm:text-3xl xl:text-5xl w-full 2xl:w-2/3 border-t pt-8">
-					Looking forward to build somthing for your <br />
+					Looking forward to build something for your <br />
 					buisness/organization?
 				</p>
 

@@ -28,7 +28,7 @@ const Experience = () => {
 									Experience
 								</h3>
 								<span className="text-sm font-bold text-gray-400">
-									These are the compaines where I have previously worked.
+									These are the companies where I have previously worked.
 								</span>
 							</div>
 						</div>
