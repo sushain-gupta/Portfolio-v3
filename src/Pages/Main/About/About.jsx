@@ -18,7 +18,7 @@ const About = () => {
 	return (
 		<section
 			tabIndex={3}
-			ref={ref}
+			// ref={ref}
 			name="about"
 			className="relative flex flex-col items-center justify-center min-h-screen py-20 bg-transparent sm:text-justify lg:text-start lg:flex-row lg:justify-between lg:gap-10 xl:gap-0 focus:outline-none lg:py-0"
 		>
