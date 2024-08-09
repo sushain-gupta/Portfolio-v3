@@ -12,11 +12,11 @@ const Home = () => {
 			name="home"
 			className="flex items-center justify-center h-screen pt-10 text-base lg:flex-row sm:text-lg md:text-xl lg:justify-around text-gray-500"
 		>
-			{/* <motion.div
+			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 0.05 }}
 				transition={animationPlayed ? {} : { duration: 2, delay: 4 }}
-				className="bg-homeBg w-screen h-screen absolute -z-10 top-0 bg-cover bg-no-repeat" /> */}
+				className="bg-homeBg w-screen h-screen absolute -z-10 top-0 bg-cover bg-no-repeat" />
 
 			<div className="text-center">
 				<motion.h1

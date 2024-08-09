@@ -3,9 +3,6 @@ export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		extend: {
-			height: {
-				screen: "100dvh",
-			},
 			backgroundImage: {
 				homeBg: "url('/src/data/assets/bg.png')",
 			},

@@ -14,17 +14,10 @@ const App = () => {
 
 	return (
 		<div className="relative text-gray-700">
-			{/* <div className="absolute h-[120dvh] w-full -z-10 bg-gradient-to-b from-white/90 to-white"></div> */}
-
 			<Routes>
 				<Route
 					path="/"
 					element={<Main />} />
-
-				{/* <Route
-					path="/projects"
-					element={<ProjectLibrary />}
-				/> */}
 
 				<Route
 					path="/*"
