@@ -17,8 +17,8 @@ const Footer = () => {
 				</p>
 
 				<Link
-					target="_blank"
 					to="https://topmate.io/sushain/1136713"
+					target="_blank"
 					className="flex items-center gap-2 px-4 text-sm sm:text-base xl:text-lg font-semibold xl:px-5 py-2 rounded-full text-emerald-700 duration-500 ring-1 hover:bg-emerald-700 hover:text-white ring-emerald-700">
 					Let's queue up a time to chat <HiOutlineChatAlt2 />
 				</Link>

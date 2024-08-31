@@ -60,6 +60,7 @@ const ProjectCard = ({ project, styles, initials }) => {
 								className="flex justify-between gap-6 m-auto text-3xl w-max h-max">
 								<Link
 									to={project.Github}
+									target="_blank"
 									className="p-2 duration-500 rounded-full text-white hover:rotate-6 bg-black/50"
 								>
 									<AiFillGithub />
@@ -67,6 +68,7 @@ const ProjectCard = ({ project, styles, initials }) => {
 
 								<Link
 									to={project.ProjectLink}
+									target="_blank"
 									className="p-2 duration-500 rounded-full text-white hover:rotate-6 bg-sky-500/70"
 								>
 									<AiOutlineLink />
