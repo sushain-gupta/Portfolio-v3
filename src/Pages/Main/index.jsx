@@ -5,6 +5,7 @@ import About from './About/About'
 import Skills from './Skills/Skills'
 import RecentProjects from './RecentProjects/RecentProjects'
 import Experience from './Experience/Experience'
+import Testimonials from './Testimonials/Testimonials'
 
 const Main = () => {
     const animationPlayed = sessionStorage.getItem('animationPlayed') || false;
@@ -33,7 +34,7 @@ const Main = () => {
                 <Skills />
                 <RecentProjects />
                 <Experience />
-                {/* <Testimonials /> */}
+                <Testimonials />
             </div>
         </>
     )

@@ -103,7 +103,7 @@ const Header = () => {
 					</span>
 				</Link>
 
-				{/* <Link
+				<Link
 					onClick={() => setOpenSidebar(false)}
 					to="testimonials"
 					spy={true}
@@ -113,7 +113,7 @@ const Header = () => {
 					<span className="bg-left-bottom bg-gradient-to-r from-emerald-100 to-emerald-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out pb-1">
 						Testimonials
 					</span>
-				</Link> */}
+				</Link>
 
 				<RouterLink
 					target="_blank"

@@ -6,29 +6,30 @@ const TestimonialCard = ({ testimonial }) => {
 		<div className="flex flex-col items-center h-full p-4 mx-auto my-auto overflow-hidden text-center ring-0 ring-gray-200 sm:w-96 rounded-3xl bg-slate-100 bg-gradient-to-br from-gray-50 via-violet-50 to-gray-100">
 			<div className="relative">
 				<div
-					className={`${testimonial.type === "client" ? "bg-emerald-200" : "bg-indigo-200"
+					className={`${testimonial.type === "client" ? "bg-emerald-200" : testimonial.type === "colleagues" ? "bg-violet-200" : "bg-blue-200"
 						} ${testimonial.profile && "overflow-hidden"
 						} w-20 h-20 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0`}
 				>
 					<img
-						className="object-cover w-full h-full"
+						className="object-cover w-full h-full p-1 rounded-full"
 						src={
 							testimonial.profile
 								? testimonial.profile
 								: testimonial.gender.toLowerCase() === "male"
-									? "https://res.cloudinary.com/dkezwrb3a/image/upload/v1694538229/Portfolio/testimonials/Number117_vnezod.svg"
-									: "https://res.cloudinary.com/dkezwrb3a/image/upload/v1694551283/Portfolio/testimonials/Number117_io2wji.svg"
+									? "https://res.cloudinary.com/dkezwrb3a/image/upload/sushain/Portfolio/testimonials/Number117_vnezod.svg"
+									: "https://res.cloudinary.com/sushain/image/upload/v1694551283/Portfolio/testimonials/Number117_io2wji.svg"
 						}
 						alt="pfp"
 					/>
 				</div>
 
-				<div className="absolute right-0 w-5 h-5 overflow-hidden rounded-full bottom-5">
+				<div className="absolute right-0 w-5 h-5 overflow-hidden bottom-5">
 					<img
 						className="object-cover w-full h-full"
-						src="https://res.cloudinary.com/dkezwrb3a/image/upload/v1694541361/Portfolio/flags/india-flag-icon_fpxlva.svg"
+						src="https://res.cloudinary.com/sushain/image/upload/v1725738488/india_zkbhzr.png"
 						alt="flag"
 					/>
+
 				</div>
 			</div>
 

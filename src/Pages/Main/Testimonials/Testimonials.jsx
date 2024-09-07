@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import TestimonialCard from "./Components/TestimonialCard";
 import { testimonials } from "../../../data/Testimonials";
-import arrow from "../../../data/assets/png/arrow.png";
+import arrow from "../../../data/assets/arrow.svg";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 
@@ -32,12 +32,17 @@ const Testimonials = () => {
 				<p className="text-center">
 					Discover Feedback from{" "}
 					<span className="px-1 font-semibold bg-green-100 rounded-lg">
-						Clients
+						clients
+					</span>{" "}
+					,{" "}
+					<span className="px-1 font-semibold rounded-lg bg-violet-100">
+						colleagues
 					</span>{" "}
 					and{" "}
 					<span className="px-1 font-semibold rounded-lg bg-sky-100">
-						Colleagues
+						individuals
 					</span>{" "}
+					I've mentored or collaborated with!
 				</p>
 			</div>
 
