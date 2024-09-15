@@ -54,22 +54,25 @@ const Experience = () => {
 													{exp.duration}
 												</time>
 
-												<p className="mt-3">
-													<b>Technologies Used:</b>{" "}
-													{
-														exp.techstack.map((tech, key) => {
-															return (
-																<span key={key} className="inline-flex items-center">
-																	{
-																		key > 0 &&
-																		<span className="text-sm text-slate-400"><BsDot /></span>
-																	}
-																	<span>{tech} </span>
-																</span>
-															)
-														})
-													}
-												</p>
+												{
+													exp.techstack &&
+													<p className="mt-3">
+														<b>Technologies Used:</b>{" "}
+														{
+															exp.techstack.map((tech, key) => {
+																return (
+																	<span key={key} className="inline-flex items-center">
+																		{
+																			key > 0 &&
+																			<span className="text-sm text-slate-400"><BsDot /></span>
+																		}
+																		<span>{tech} </span>
+																	</span>
+																)
+															})
+														}
+													</p>
+												}
 
 												<ul className="m-4 list-disc text-slate-700">
 													{

@@ -18,7 +18,7 @@ const Main = () => {
             const timeoutId = setTimeout(() => {
                 document.documentElement.style.overflow = '';
                 document.body.style.overflow = '';
-            }, 6500);
+            }, 5500);
 
             return () => clearTimeout(timeoutId);
         }
