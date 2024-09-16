@@ -71,7 +71,7 @@ const Testimonials = () => {
 				}}
 				loop={true}
 				modules={[Autoplay, Pagination]}
-				className="flex w-full my-10 mySwiper h-96"
+				className="flex w-full my-10 mySwiper h-[25rem]"
 			>
 				{testimonials.map((testimonial, key) => {
 					return (

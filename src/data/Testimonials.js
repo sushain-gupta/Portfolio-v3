@@ -17,7 +17,8 @@ export const testimonials = [
 		type: "other",
 		gender: "female",
 		country: "India",
-		occupation: "Student @ PICT'25",
+		occupation:
+			"Former DataScience Intern @Mastercard || PICT'25 || Full Stack Web Developer",
 		feedback:
 			"I've had the pleasure of interacting with Sushain, and it's truly rare to encounter someone with such remarkable motivation and enthusiasm. Sushain consistently provided valuable insights and encouraged me to broaden my skills. His unwavering support and advice were instrumental in my growth. His guidance on every detail and his extensive knowledge in freelancing have been incredibly beneficial. If you're seeking someone who is both knowledgeable and dedicated, I highly recommend Sushain.",
 	},
@@ -31,6 +32,18 @@ export const testimonials = [
 		occupation: "Managing Partner @ Stratmark Consulting",
 		feedback:
 			"Sushain has a great understanding on how to read a problem. He is very quick and brilliantly breaks down the issues to give a solution. He often, goes an extra mile to be in the shoes of the customer and self-assesses himself to foresee what they actually want. Having working with sushain, it's been a wonderful and positive to see our technology needs met quickly and efficiently.",
+	},
+	{
+		name: "Divyanshu Vashu",
+		profile:
+			"https://media.licdn.com/dms/image/v2/D5603AQE-vu8HTnazmw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1684409177741?e=1732147200&v=beta&t=XBwJmyC8NYTVTnkOjDj3F1OwjsncmV8Voc2_CDW7T5Q",
+		type: "student",
+		gender: "male",
+		country: "India",
+		occupation:
+			"Web Lead @SpectoV || GSSOC'24 Contributor || MERN Dev || Full Stack Dev || VIT 2025",
+		feedback:
+			"First of all, Sushain's behavior is incredibly respectful and helpful. His 'Master the ASE: Accenture Interview Secrets' content really cleared up most of my doubts. I highly recommend this resource to anyone looking to prepare for their Accenture interviews.",
 	},
 	{
 		name: "Vikram Mali",
@@ -64,5 +77,17 @@ export const testimonials = [
 		occupation: "Managing Partner @ Stratmark Consulting",
 		feedback:
 			"Sushain has a great understanding on how to read a problem. He is very quick and brilliantly breaks down the issues to give a solution. He often, goes an extra mile to be in the shoes of the customer and self-assesses himself to foresee what they actually want. Having working with sushain, it's been a wonderful and positive to see our technology needs met quickly and efficiently.",
+	},
+	{
+		name: "Divyanshu Vashu",
+		profile:
+			"https://media.licdn.com/dms/image/v2/D5603AQE-vu8HTnazmw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1684409177741?e=1732147200&v=beta&t=XBwJmyC8NYTVTnkOjDj3F1OwjsncmV8Voc2_CDW7T5Q",
+		type: "student",
+		gender: "male",
+		country: "India",
+		occupation:
+			"Web Lead @SpectoV || GSSOC'24 Contributor || MERN Dev || Full Stack Dev || VIT 2025",
+		feedback:
+			"First of all, Sushain's behavior is incredibly respectful and helpful. His 'Master the ASE: Accenture Interview Secrets' content really cleared up most of my doubts. I highly recommend this resource to anyone looking to prepare for their Accenture interviews.",
 	},
 ];
