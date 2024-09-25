@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 /* Importing Tailwind CSS base styles, components, and utilities */
 @tailwind base;
@@ -23,7 +23,7 @@ body,
 :root,
 .app {
 	width: 100dvw;
-	min-height: 100dvh;
+	min-height: 100vh;
 	overflow-x: hidden;
 	font-family: "Plus Jakarta Sans";
 }

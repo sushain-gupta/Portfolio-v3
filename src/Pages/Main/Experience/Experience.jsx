@@ -10,7 +10,7 @@ const Experience = () => {
 	return (
 		<section
 			name="experience"
-			className="flex flex-col items-center justify-center min-h-screen mb-24 sm:mb-12"
+			className="flex flex-col items-center justify-center min-h-screen py-24 sm:mb-12"
 		>
 			<div
 				ref={ref}

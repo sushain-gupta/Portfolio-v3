@@ -36,7 +36,13 @@ const Header = () => {
 				<img className="w-full h-full rounded-full" src={about.logo} alt="logo" />
 			</RouterLink>
 
-			<div onClick={() => setOpenSidebar(false)} className={`${openSidebar ? "translate-x-0" : "translate-x-full"} lg:hidden fixed left-0 w-full h-screen lg:h-full bottom-0 bg-white/80 duration-700 backdrop-blur-sm`} />
+			{/* Backdrop */}
+			<div
+				onClick={() => setOpenSidebar(false)}
+				className={`${openSidebar ? "translate-x-0 h-screen backdrop-blur-sm" : "translate-x-full h-screen "
+					} lg:hidden fixed left-0 w-full bottom-0 bg-white/80 duration-700`}
+				style={{ top: '0', transitionProperty: 'height, transform' }}
+			/>
 
 			<nav onClick={() => setOpenSidebar(false)} className={`${openSidebar ? "translate-x-0" : "translate-x-full"} fixed lg:static h-screen lg:h-full flex-col top-0 bg-white lg:bg-transparent lg:translate-x-0 shadow-2xl lg:shadow-none bottom-0 right-0 w-2/3 sm:w-1/2 lg:w-max p-6 sm:p-8 z-60 lg:flex-row flex gap-5 lg:gap-10 lg:p-1 overflow-hidden duration-500 text-sm md:text-base`}>
 				<button onClick={() => setOpenSidebar(false)} className="p-2 ml-auto overflow-hidden text-xl text-red-500 duration-500 rounded-full bg-rose-100 lg:hidden z-60 md:text-2xl">
