@@ -108,16 +108,9 @@ const About = () => {
 				<h2 className="hidden text-3xl font-extrabold lg:block xl:text-5xl heading">{about.firstName + " " + about.lastName}</h2>
 
 				<p className="my-3">
-					I'm an <span className="font-semibold">undergrad</span>, self taught
-					web developer from <span className="font-semibold">Pune, India</span>.
-					I possess skilled talent and immense experience in creating and
-					maintaining visually appealing and user-friendly websites. I have
-					comprehensive knowledge of various web development technologies such
-					as{" "}
+					I'm a <span className="font-semibold">graduate</span> and a self-taught web developer with two years of professional experience as a freelancer. I bring a strong skill set and extensive experience in designing and maintaining visually appealing, user-friendly websites and web applications. My expertise spans a range of web development technologies, including{" "}
 					<span className="font-semibold">
-						HTML, CSS, JavaScript, MERN, Tailwind CSS, Firebase{" "}
-					</span>
-					and{" "}
+						HTML, CSS, JavaScript, MERN stack, Tailwind CSS</span>, and{" "}
 
 					<Link
 						tabIndex={4}
