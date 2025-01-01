@@ -2,7 +2,7 @@ export const testimonials = [
 	{
 		name: "Vikram Mali",
 		profile:
-			"https://media.licdn.com/dms/image/v2/C5603AQFCEOk48kAb_Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1638351431895?e=1730937600&v=beta&t=B8gBjd9WAH2jHnwsrj5sz2zgRN-Qq7ZxUmPe0Lnv_ho",
+			"https://res.cloudinary.com/sushain/image/upload/v1735736370/Portfolio/testimonials/1638351431895_c57iuo.jpg",
 		gender: "male",
 		type: "colleagues",
 		country: "India",
@@ -13,7 +13,7 @@ export const testimonials = [
 	{
 		name: "Mayuri Kolhe",
 		profile:
-			"https://media.licdn.com/dms/image/v2/D5603AQEUY_HXnI_mhw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721955725450?e=1730937600&v=beta&t=sJ0spa4GfV0Ah9ZAk2vkjdT5Ez3LM1Z7I0ProRvcS8s",
+			"https://res.cloudinary.com/sushain/image/upload/v1735736370/Portfolio/testimonials/1721955725450_teonhy.jpg",
 		type: "other",
 		gender: "female",
 		country: "India",
@@ -25,7 +25,7 @@ export const testimonials = [
 	{
 		name: "Vinay Kumar",
 		profile:
-			"https://media.licdn.com/dms/image/v2/C5603AQG9O2p8JpYmoA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1597308514744?e=1730937600&v=beta&t=O8uv0nle5Gw-fmeP8pSaSigpDPE2GKQey64b2lyn1t0",
+			"https://res.cloudinary.com/sushain/image/upload/v1735736370/Portfolio/testimonials/1597308514744_jxljf0.jpg",
 		type: "client",
 		gender: "male",
 		country: "India",
@@ -36,7 +36,7 @@ export const testimonials = [
 	{
 		name: "Divyanshu Vashu",
 		profile:
-			"https://media.licdn.com/dms/image/v2/D5603AQE-vu8HTnazmw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1684409177741?e=1732147200&v=beta&t=XBwJmyC8NYTVTnkOjDj3F1OwjsncmV8Voc2_CDW7T5Q",
+			"https://res.cloudinary.com/sushain/image/upload/v1735736370/Portfolio/testimonials/1684409177741_du4yg1.jpg",
 		type: "student",
 		gender: "male",
 		country: "India",
@@ -48,7 +48,7 @@ export const testimonials = [
 	{
 		name: "Vikram Mali",
 		profile:
-			"https://media.licdn.com/dms/image/v2/C5603AQFCEOk48kAb_Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1638351431895?e=1730937600&v=beta&t=B8gBjd9WAH2jHnwsrj5sz2zgRN-Qq7ZxUmPe0Lnv_ho",
+			"https://res.cloudinary.com/sushain/image/upload/v1735736370/Portfolio/testimonials/1638351431895_c57iuo.jpg",
 		gender: "male",
 		type: "colleagues",
 		country: "India",
@@ -59,7 +59,7 @@ export const testimonials = [
 	{
 		name: "Mayuri Kolhe",
 		profile:
-			"https://media.licdn.com/dms/image/v2/D5603AQEUY_HXnI_mhw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721955725450?e=1730937600&v=beta&t=sJ0spa4GfV0Ah9ZAk2vkjdT5Ez3LM1Z7I0ProRvcS8s",
+			"https://res.cloudinary.com/sushain/image/upload/v1735736370/Portfolio/testimonials/1721955725450_teonhy.jpg",
 		type: "other",
 		gender: "female",
 		country: "India",
@@ -70,7 +70,7 @@ export const testimonials = [
 	{
 		name: "Vinay Kumar",
 		profile:
-			"https://media.licdn.com/dms/image/v2/C5603AQG9O2p8JpYmoA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1597308514744?e=1730937600&v=beta&t=O8uv0nle5Gw-fmeP8pSaSigpDPE2GKQey64b2lyn1t0",
+			"https://res.cloudinary.com/sushain/image/upload/v1735736370/Portfolio/testimonials/1597308514744_jxljf0.jpg",
 		type: "client",
 		gender: "male",
 		country: "India",
@@ -81,7 +81,7 @@ export const testimonials = [
 	{
 		name: "Divyanshu Vashu",
 		profile:
-			"https://media.licdn.com/dms/image/v2/D5603AQE-vu8HTnazmw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1684409177741?e=1732147200&v=beta&t=XBwJmyC8NYTVTnkOjDj3F1OwjsncmV8Voc2_CDW7T5Q",
+			"https://res.cloudinary.com/sushain/image/upload/v1735736370/Portfolio/testimonials/1684409177741_du4yg1.jpg",
 		type: "student",
 		gender: "male",
 		country: "India",

@@ -11,7 +11,7 @@ export const about = {
 	shortDesc:
 		"An India-based freelancer who's into web development and open to work as a front-end developer.",
 	longDesc: [
-		"I'm an graduate, self taught web developer from Pune, India. I possess skilled talent and immense experience in creating and maintaining visually appealing and user-friendly websites. I have comprehensive knowledge of various web development technologies such as HTML, CSS, JavaScript, ReactJS, Tailwind CSS, Firebase and more.",
+		"I'm a graduate, self taught web developer from Pune, India. I possess skilled talent and immense experience in creating and maintaining visually appealing and user-friendly websites. I have comprehensive knowledge of various web development technologies such as HTML, CSS, JavaScript, MERN stack, Tailwind CSS and more.",
 		"Overall, I guarantee the highest level of professionalism, technical proficiency, and client satisfaction in every aspect of web development.",
 	],
 	socialLinks: {

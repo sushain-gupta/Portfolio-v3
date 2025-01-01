@@ -2,7 +2,7 @@ export const experience = [
 	{
 		companyName: "Accenture",
 		companyLogo:
-			"https://media.licdn.com/dms/image/v2/D4E0BAQG-XygI4z934A/company-logo_200_200/company-logo_200_200/0/1723130650427/accenture_logo?e=1734566400&v=beta&t=NlInam5j0_kuhL2O9Wt2ul4o7blQaQNKzXwYyeRf4oY",
+			"https://res.cloudinary.com/sushain/image/upload/v1735736179/Portfolio/exp/359453892_597778089149141_4521339302675636379_n_khryjs.jpg",
 		jobRole: "ASE",
 		duration: "Aug 2024 - Present",
 		techstack: null,
