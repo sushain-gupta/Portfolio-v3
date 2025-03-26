@@ -46,7 +46,7 @@ const TestimonialCard = ({ testimonial }) => {
 					<BsQuote />
 				</div>
 
-				<p className="px-2 line-clamp-5 text-sm">{testimonial.feedback}</p>
+				<p className="px-2 line-clamp-6 text-sm">{testimonial.feedback}</p>
 
 				<div className="mt-auto">
 					<BsQuote className="rotate-180" />
