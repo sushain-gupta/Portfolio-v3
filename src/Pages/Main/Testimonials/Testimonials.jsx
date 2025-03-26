@@ -28,7 +28,7 @@ const Testimonials = () => {
 			<div className="absolute top-0 w-full h-full bg-gradient-to-t from-white via-white/95 to-white -z-10"></div>
 
 			<div className="flex flex-col items-center mx-auto">
-				<h2 className="text-4xl font-bold heading">Testimonial</h2>
+				<h2 className="text-3xl font-bold heading">Testimonial</h2>
 				<p className="text-center">
 					Discover Feedback from{" "}
 					<span className="px-1 font-semibold bg-green-100 rounded-lg">
@@ -53,17 +53,13 @@ const Testimonials = () => {
 				spaceBetween={20}
 				breakpoints={{
 					1440: {
-						slidesPerView: 2,
-						spaceBetween: 20,
-					},
-					1536: {
 						slidesPerView: 3,
 						spaceBetween: 20,
-					},
+					}
 				}}
 				autoplay={{
 					delay: 2500,
-					disableOnInteraction: false,
+					disableOnInteraction: true,
 				}}
 				pagination={{
 					clickable: true,

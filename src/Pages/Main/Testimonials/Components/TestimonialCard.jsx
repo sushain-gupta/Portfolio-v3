@@ -34,19 +34,19 @@ const TestimonialCard = ({ testimonial }) => {
 			</div>
 
 			<div className="mb-3">
-				<h2 className="text-lg font-semibold text-gray-900">
+				<h2 className="font-semibold text-gray-900">
 					{testimonial.name}
 				</h2>
 
 				<p className="text-sm text-gray-400">{testimonial.occupation}</p>
 			</div>
 
-			<div className="flex p-2 text-base leading-relaxed text-center">
+			<div className="flex p-2 leading-relaxed text-center">
 				<div>
 					<BsQuote />
 				</div>
 
-				<p className="px-2 line-clamp-5">{testimonial.feedback}</p>
+				<p className="px-2 line-clamp-5 text-sm">{testimonial.feedback}</p>
 
 				<div className="mt-auto">
 					<BsQuote className="rotate-180" />
