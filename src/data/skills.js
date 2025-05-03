@@ -49,6 +49,12 @@ export const skills = [
 	},
 	{
 		skillIcon:
+			"https://res.cloudinary.com/sushain/image/upload/v1746264303/Portfolio/skills/shopify.png",
+		skillName: "Shopify",
+		major: true,
+	},
+	{
+		skillIcon:
 			"https://res.cloudinary.com/sushain/image/upload/v1674668115/Portfolio/skills/firebase_dwkgf4.png",
 		skillName: "Firebase",
 		major: true,
