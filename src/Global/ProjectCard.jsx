@@ -1,4 +1,4 @@
-import { AiOutlineLink } from "react-icons/ai"; 
+import { AiOutlineLink } from "react-icons/ai";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { IoIosClose } from "react-icons/io";
 import React, { useState } from "react";
@@ -105,8 +105,8 @@ const ProjectCard = ({ project, styles, initials }) => {
 							</div>
 						</div>
 
-						<div className="flex flex-col justify-between px-6 pb-4">
-							<p className="mb-2 text-lg font-bold text-black">{project.Title}</p>
+						<div className="flex flex-col px-6 pb-4 h-1/2">
+							<p className="mb-2 text-base font-bold text-black">{project.Title}</p>
 
 							<div>
 								<p>
