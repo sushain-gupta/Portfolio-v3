@@ -7,13 +7,11 @@ export const experience = [
 		duration: "Aug 2024 - Present",
 		techstack: ["Harness", "Artifactory", "Snowflake", "AWS", "EKS", "Apache Nifi", "Apache Airflow", "Bash scripting", "Linux", "Git", "PL/SQL", "Oracle Apex", "Python"],
 		description: [
-			"Part of a migration project moving existing mainframe processes to the cloud, utilising Kubernetes, Harness, JFrog, Bash, and AWS to modernise infrastructure and streamline deployments.",
-			"Designed and maintained Apache NiFi data pipelines, pulling data from Amazon S3 or Salesforce, and transforming it for downstream analytical consumption in Snowflake.",
-			"Worked as a Core Developer, responsible for implementing and optimising ETL workflows using SQL, Python, Apache NiFi, and Snowflake, ensuring seamless data transformation and loading.",
-			"Created automated Python scripts that significantly reduced job completion time and improved overall workflow efficiency.",
-			"Developed scripts for automated execution using Apache Airflow, enabling efficient data processing and filtration for analytical use.",
-			"Served as a client-facing developer, actively engaging with stakeholders to gather requirements and deliver data-driven solutions tailored to business needs.",
-			"Completed training in Oracle PL/SQL, Oracle APEX, Snowflake, and Python, gaining a strong foundation in database development and backend programming."
+			"Designed, implemented, and optimised Apache NiFi data pipelines, integrating sources such as Amazon S3 and Salesforce, transforming data for analytical consumption in Snowflake.",
+			"Developed and automated ETL workflows using SQL, Python, Apache NiFi, Snowflake, and Apache Airflow, reducing job completion time and improving workflow efficiency.",
+			"Contributed to a cloud migration project, moving mainframe processes to AWS using Kubernetes, Harness, JFrog, and Bash, modernising infrastructure and streamlining deployments.",
+			"Acted as a client-facing developer, collaborating with stakeholders to gather requirements and deliver tailored data-driven solutions.",
+			"Gained strong database and backend programming skills through training in Oracle PL/SQL, Oracle APEX, Snowflake, and Python.",
 		],
 	},
 	{
