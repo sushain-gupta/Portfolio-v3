@@ -61,6 +61,17 @@
   <!-- Google Site Verification -->
   <meta name="google-site-verification" content="pW238KTIBl0yeVEJ85PEaVL0EOO1YIVzJFs0wCoyk9c" />
 
+  <!-- OneSignal push notification setup -->
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+  <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function (OneSignal) {
+      await OneSignal.init({
+        appId: "bbc80ffb-1654-4295-ac3d-b027eca305dc",
+      });
+    });
+  </script>
+
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
   {
